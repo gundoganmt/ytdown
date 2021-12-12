@@ -110,8 +110,8 @@
                               <img src="{{thumbnail}}" class="w-100 border-radius-lg shadow">
                               </a>
                            </div>
-                           <h5 class="mt-3">title</h5>
-                           <p>Duration: duration</p>
+                           <h5 class="mt-3 title"></h5>
+                           <p id="duration"></p>
                            <div class="social-share">
                               <div class="share-icons-sm relative">
                                  <a href="https://www.facebook.com/sharer.php?u=https://vidclear.themeluxury.com" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://vidclear.themeluxury.com','facebook','height=500,width=800,resizable=1,scrollbars=yes'); return false;" data-label="Facebook" rel="noopener noreferrer nofollow" target="_blank" class="btn btn-facebook btn-simple rounded p-2">
@@ -145,16 +145,16 @@
                                  <span class="ms-1">Video</span>
                                  </a>
                               </li>
-                              <!-- <li class="nav-item">
+                              <li class="nav-item d-none" id="vid_w_s_item">
                                   <a class="nav-link mb-0 px-0 py-1" href="javascript:;" id="video-without-sound-tab" data-bs-toggle="tab" data-bs-target="#video-without-sound">
                                       <span class="ms-1">Without Sound</span>
                                   </a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item d-none" id="audio_items">
                                   <a class="nav-link mb-0 px-0 py-1" href="javascript:;" id="audio-tab" data-bs-toggle="tab" data-bs-target="#audio">
                                       <span class="ms-1">Audio</span>
                                   </a>
-                              </li> -->
+                              </li>
                            </ul>
                            <div class="tab-content">
                               <div class="card h-100 tab-pane fade active show rounded-top-0" id="video" role="tabpanel" aria-labelledby="video-tab">
@@ -166,51 +166,18 @@
                                              <th>Size</th>
                                              <th>Download</th>
                                           </tr>
-                                          
                                        </tbody>
                                     </table>
                                  </div>
                               </div>
-                              <!-- <div class="card h-100 tab-pane fade rounded-top-0" id="video-without-sound" role="tabpanel" aria-labelledby="video-without-sound-tab">
+                              <div class="card h-100 tab-pane fade rounded-top-0" id="video-without-sound" role="tabpanel" aria-labelledby="video-without-sound-tab">
                                  <div class="card-body table-responsive">
                                     <table class="table">
-                                       <tbody>
+                                       <tbody id="tbody_vid_w_s">
                                           <tr>
                                              <th>Resolution</th>
                                              <th>Size</th>
                                              <th>Download</th>
-                                          </tr>
-                                          <tr>
-                                             <td class="align-middle py-4">
-                                                <span class="d-block">
-                                                1080p (.mp4)
-                                                <span class="badge bg-gradient-danger">Full HD</span>
-                                                </span>
-                                             </td>
-                                             <td class="align-middle">
-                                                <span class="d-block">4.05 GB</span>
-                                             </td>
-                                             <td class="align-middle">
-                                                <a class="btn bg-gradient-success mb-0" href="https://vidclear.themeluxury.com/dl.php?token=+ixZ6aLy08arfdsQfaMQ81e5Ilgq9q0pmF3VkH9VDSgkFFhnQwEv8PMzEWVh/eLyfG/Ms5+j28xeFwu6qBIDqIVJlcnG98QBKf0FNft0HiNXxK4fMWyYYwVmLXhPSQphZftqHP2ZQnokt4Lsvb4lKev0KFsO7uWyWbvfOBei+I/WKtefifYpd+HXZGzcv4lp5Nl/lCq8lWdWFl+etN/JuP0mxwWT37mY8X0gz2KKmaoMZGWUGQyLMzu0txFUEHpRtssIFvZuvXodNptgv0tr9VBBZY2xmclbJADw1C0n44WcTHNVpE6LAUkkQ/mWVK6JUDKCMTn5e3SvBlDRRw79tzO8hvy+jF2qwSfVInb44zSKMRvNojRfWC954fUCBfwXJXg8h5ttSODa+qa4jfDMDyGLnXlItibxiGZE6CjKKojtLScAXBxOVGOxp/SMOe0g4PiV2HMlWb0AIVxmjBGsAN3Qhx48u5zzjMVc8KCTwp9So2unGYn3HnxXbkK0lPwE3Uy0EU1zOp45hMgqP/Tk/gCe6Xlcb/awdTt7L9ckD52gFjt/tZwZYduCyIaPZWKQA5oVvvd2ItHM1tw9OSYzv9rlsHB5RHIYoMBRXn+pPntI/Kt9t/fkO+2bff/irDCnAvyVZak3ZaagS09H9katdyLJ6iuwDm3Oxv+RIU2rPHf9S/bpAmWELRiF6cx387qUuGpn+XV5loN1hyCqO9oH+oANBWNaRTroYTC5CdgQYW6XzTIrbKiCvTjE25MzRbqvOhOiPrBOsYBDSo0nJNIWVchaMh0+5HTHXGFts78zGpxDvrVcAT1dMxYFvbz8v1t9e3X+h3kraj8k/umgvlUQe+KU1NXs3d4MsvgczPLHdm8/frTGWM3fzRGjEzrZTWez67bVjWkym2aAA6V2yIXeBAo6QI2HaZgX9/K1lBCE3dNCPFMNPhUv2fpjPemv7XbBtdic45lI+4P0EtymiFl++J/DRdpWN3G8VP4+NKhNp8rBrfmlG0qjZXIza9nAF8KecFoRC0mDAtWtR+utR2VhIopeB0ZaNxYWJ5JjV83lGGblAm4/sXUSOqBwXyxXAGAfIgKeR9iHe5qS1/irN/bvyskW1ktEhDOpG5PZcTHdE9F6umtEx9Q8jAUwdxx0z/eEncxhpXcaHYo7DingKX03ym6O37h8hBIDKDrVi3VjmfghqI4sTCelzngFnpGqRZat4v8BDWkQEXhr8i3iYOfBaolNcF826r/TUmHXMaZrNKN3t/COPI2xuNRVKKe8X4GzyHUEhRBksRv0MMBs3Cu0dmf2tomF4VQHLVHW1Wt8tmtduzOwhiYvJM7C+R9ARcsWcISnoh7x5ld5uSlta8/YMWquAjzN0TI+L0NQGpbf22+ivwO4IeTYznSH2OzGIUSusMPXFxA7wHbkUTM/4xsPcyXwavsqVDK4eLs7o46+0s2X01I5ptH4hdRwK2ZtaHQ2b58UyH7tu+eVxQ==" title="Download" onclick="window.location.href='VidClear_3-hours-of-amazing-nature-scenery-relaxing-music-for-stress-relief.mp4'">
-                                                <span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>
-                                                </a>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td class="align-middle py-4">
-                                                <span class="d-block">
-                                                1080p (.webm)
-                                                <span class="badge bg-gradient-danger">Full HD</span>
-                                                </span>
-                                             </td>
-                                             <td class="align-middle">
-                                                <span class="d-block">2.93 GB</span>
-                                             </td>
-                                             <td class="align-middle">
-                                                <a class="btn bg-gradient-success mb-0" href="https://vidclear.themeluxury.com/dl.php?token=+ixZ6aLy08arfdsQfaMQ81e5Ilgq9q0pmF3VkH9VDSgkFFhnQwEv8PMzEWVh/eLyfG/Ms5+j28xeFwu6qBIDqIVJlcnG98QBKf0FNft0HiNXxK4fMWyYYwVmLXhPSQphZftqHP2ZQnokt4Lsvb4lKev0KFsO7uWyWbvfOBei+I/WKtefifYpd+HXZGzcv4lp5Nl/lCq8lWdWFl+etN/JuP0mxwWT37mY8X0gz2KKmaoMZGWUGQyLMzu3sB5UEHpRtssIFvZuvXodNptgv0tr9VBBZY2xmclbJADw1C0n44WcTHNVpE6LAUkkQ/mWVK6JUDKCMTn5e3SvBlDRRw79tzO8hvy+jF2qwSfVInb44zSKMRvNojRfWC954fUCBfwXJXg8h5ttSODa+qa4jfDMDyGLnXlItibxiGZE6CjKKojtLScAXBxOVGOxp/SMOe0g4PiV2HMlWb0AIVxmjBGsAN3Qhx48u5zzjMVc8KCTwp9So2unGYn3HnxXbkK0lPwE3Uy0EU1zOp45hMgqP/Tk/gCe6Xlcb/awdTt7L9ckD52gFjt/tZwZYduCyIaPZWKQA5oVvvd2ItHM1tw9OSYpqoyu+G03HnxIqso7dUajQTpomeFfo9bLQIa/aO/WzXGpGbPReb9iIKmpQBxO9kKodCPP7ia5Gy/fwbCdIEWjNGHkRfb2SGSdZBSC7cZ99b2Qum9v9HB7lIRgzDnjN90C8IsNAWxQRC6ocS+gRNECLGCX2CMmabeR5XzYzcZzRqendxykOrBPs4RHXJpWVdQSVc9fNB8uoSqtTmYJ4bM7V5RDuLNdBjpPe0VoiqO2xF8FPV/XlCJ/bXJx/fizrVkONbqJ3Mz3yp4bw94QgOW2XHZqacXsVYzIvDOrDi/fWTGkmobJl24jnSaXcpRh3IHCHx0sQJLOfuki8fCxxwf189dGNBMaTzgyj+0SGee0umGwldeV6NJfiqTlFYux+XZ/4c2WX9QMS3+CFZ8lRudoktLghPS5JULnSG8dYNyOEabYKiYKAHuXQ8KARdmTbmhzPJgCP39vdjkwI8IXYZH1MErmPxhq/SllZrdfRk1FR3IVH1ybWaehRtbr2uKLQeTS341b3Ehh1wCDPpSwUzHdE9IljT1JxsUwjVkwbAQr5L/b+5NP7St8QqdzT0+/GTVzrDG7l/xWzFYpfWSzyVovxdI8pZA2SzK72TwZnt6hC76N7P0ZRms4O3hVxyHicNjQZJFBZxgn1+ahZmXQOoArHqRxw/ShTayAldFSFqK7er+ayAYulUZMnTCOCfQYmGyNHSPaiLWC33kPFH/X5Vd7o3U+khbn3CMmd9rP0nBrbo4XZ4TO+ky1oxl6viRlYIyPdh79RCnI0BAgFREPLcqHwXP6oha4L++U1XCIxajGJx21o9KPFhZz3XDzRns//1ocbiD/db8pRmy8buU0r9H1zsvIxVU47tDuxM9wIS0kLCJjPY5Pgjmi8fHA3U27x40=" title="Download" onclick="window.location.href='VidClear_3-hours-of-amazing-nature-scenery-relaxing-music-for-stress-relief.webm'">
-                                                <span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>
-                                                </a>
-                                             </td>
                                           </tr>
                                        </tbody>
                                     </table>
@@ -219,32 +186,16 @@
                               <div class="card h-100 tab-pane fade rounded-top-0" id="audio" role="tabpanel" aria-labelledby="audio-tab">
                                  <div class="card-body table-responsive">
                                     <table class="table">
-                                       <tbody>
+                                       <tbody id="tbody_audio">
                                           <tr>
                                              <th>Resolution</th>
                                              <th>Size</th>
                                              <th>Download</th>
                                           </tr>
-                                          <tr>
-                                             <td class="align-middle py-4">
-                                                <span class="d-block">
-                                                160kbps (.webm)
-                                                </span>
-                                             </td>
-                                             <td class="align-middle">
-                                                <span class="d-block">181.05 MB</span>
-                                             </td>
-                                             <td class="align-middle">
-                                                <a class="btn bg-gradient-success mb-0" href="https://vidclear.themeluxury.com/dl.php?token=+ixZ6aLy08arfdsQfaMQ81e5Ilgq9q0pmF3VkH9VDSgkFFhnQwEv8PMzEWVh/eLyfG/Ms5+j28xeFwu6qBIDqIVJlcnG98QBKf0FNft0HiNXxK4fMWyYYwVmLXhPSQphZftqHP2ZQnokt4Lsvb4lKev0KFsO7uWyWbvfOBei+I/WKtefifYpd+HXZGzcv4lp5Nl/lCq8lWdWFl+etN/JuP0mxwWT37mY8X0gz2KKmaoMZGWUGQyLMzu3sRdUAnxQpc8eFr4y+ytaF891+QsowwgANdvwtsURd1bk+nQpoZaIYi9ep1qccDgiSPrJeaHODTreAmSoeD+qPEfXM1ih2W/40bXooVjn32+UXCS08iP7AEyBsXwbJnFmuqZZe/sIYjEz9phyGauBzfb22rLdECfEzClD/Xy02mVW/3iFft/1LTgAEg5XDXO78eCnJrU3u/iWxnNxAaEBWz0n6zf2SPuO0CgAubv9sIRGptX21pgN8GKtBsv6RWMfPgCxzLEV3z7wQR4xIpo52N5/eaX38hTfoygDK+3oLWA5epJzXsfmXDZ7uZwdcobQg8fLIGaTF8FF4KBtMs7Bw44sLQs7qp6ismoyRiZY9ookQFuaejMv+OEVyqmRMZrfXb6Rumf5QvXaJrksUY+HAwYLtU6pcyrK6iCzDmeG5KXYIzzWMSqTAqz3AmPWY1nSqZUotLTC8is3viRvlfM2g3GlSYVE5oB8Wj5MRV/nYziuEd51eWSHzzAiIOyk8iTQ3dwnRbGsawSkTfYP8MFVXfwJf4tDQM0raFg9tQr3cFFu9YQgS8wYqLIrVnwJeBkWtqm60GUhbxHPqzB3UFNv+dq1llAiCMzbzcmz6s9pqdwhu5HVcEZodMT3DKm03hG9L23SSQvM0fH4uyIArTH6KZZ6/LGCQSEOe7SRFO80ytDu4kX+5NN4KhhJExgNsoxZd8e6/gGx7tu1xcgS3qbmRcrQ7Vlg/NjCTdAYS1OlQZ03YbI68sDEgpDHK3XgLAIEaNvRVdXAaHZZVkCxGaTlTfuQQlZUO65XP0Z4KDc6IZZrRrOXMnzcKyAL3VQxGKdpZ0Z7XkcVfymAWMKiT5Kwy968Xsi68uYvkUZAxzqhOZmBSFWbbpxzplhs8Ywhj3VpKE0Z/8KI96F9qk5ZY58ADV2RBCIrpDn9/KJ2+0EIbRyTyX1+h7N56Z8rRCC73DMMz8LvLr6OktA7FFo4cBRK+hXZZLj2dc54cxMJ0KWDGH+GKYVpF99y5sC5Goug+9dfFLKsQ6WVkCEakxZE1TmiMp1SnG6lWmeDpaO211M2aTGi92JdkCdV8w+w1AVhOg==" title="Download" onclick="window.location.href='VidClear_3-hours-of-amazing-nature-scenery-relaxing-music-for-stress-relief.webm'">
-                                                <span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>
-                                                </a>
-                                             </td>
-                                          </tr>
                                        </tbody>
                                     </table>
                                  </div>
-                              </div> -->
-
+                              </div>
                            </div>
                         </div>
                      </div>

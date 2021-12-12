@@ -5,8 +5,22 @@ import youtube_dl, requests, timeit, datetime, json
 public = Blueprint('public',__name__)
 
 def get_size(url):
-    head = requests.head(url)
-    return float(int(head.headers['Content-Length'])/1024/1024)
+    #head = requests.head(url)
+    return 255 #float(int(head.headers['Content-Length'])/1024/1024)
+
+def convertFileSize(num):
+    if not num:
+        return 'unknown'
+    kb = num/1024
+    if kb < 1024:
+        return "%.2fKb" % kb
+    else:
+        mb = kb/1024
+        if mb < 1024:
+            return "%.2fMb" % mb
+        else:
+            gb = mb/1024
+            return "%.2fGb" % gb
 
 def youtube(meta):
     video_streams = []
@@ -17,41 +31,35 @@ def youtube(meta):
     thumbnail = meta['thumbnail']
     title = meta['title']
     for m in meta['formats']:
-        if meta['acodec'] != 'none' and meta['vcodec'] != 'none':
-            if not m['filesize']:
-                filesize = get_size(m['url'])
+        if m['acodec'] != 'none' and m['vcodec'] != 'none':
             video_streams.append({
                 'resolution': m['format_note'],
-                'filesize': m['filesize'],
+                'filesize': convertFileSize(m['filesize']),
                 'ext': m['ext'],
                 'video_url': m['url']
             })
-        elif meta['acodec'] == 'none' and meta['vcodec'] != 'none':
-            if not m['filesize']:
-                filesize = get_size(m['url'])
+        elif m['acodec'] == 'none' and m['vcodec'] != 'none':
             video_without_sound.append({
                 'resolution': m['format_note'],
-                'filesize': m['filesize'],
+                'filesize': convertFileSize(m['filesize']),
                 'ext': m['ext'],
                 'video_url': m['url']
             })
-        elif meta['acodec'] != 'none' and meta['vcodec'] == 'none':
-            if not m['filesize']:
-                filesize = get_size(m['url'])
+        elif m['acodec'] != 'none' and m['vcodec'] == 'none':
             audio_streams.append({
                 'resolution': 'audio',
-                'filesize': m['filesize'],
+                'filesize': convertFileSize(m['filesize']),
                 'ext': m['ext'],
                 'video_url': m['url']
             })
 
     context = {
         'error': False,
-        'duration': duration,
+        'duration': 'Duration ' + duration,
         'thumbnail': thumbnail,
         'title': title,
-        'video_streams': video_streams,
-        'video_without_sound': video_without_sound,
+        'video_streams': sorted(video_streams, key=lambda d: int(d['resolution'].split('p')[0]), reverse=True),
+        'video_without_sound': sorted(video_without_sound, key=lambda d: int(d['resolution'].split('p')[0]), reverse=True),
         'audio_streams': audio_streams
     }
     return context
@@ -72,10 +80,10 @@ def izlesene(meta):
 
     context = {
         'error': False,
-        'duration': duration,
+        'duration': 'Duration ' + duration,
         'thumbnail': thumbnail,
         'title': title,
-        'video_streams': video_streams,
+        'video_streams': sorted(video_streams, key=lambda d: int(d['resolution'].split('p')[0]), reverse=True)
     }
     return context
 

@@ -4,11 +4,30 @@ $(function () {
     $("#video-form").submit(function (e) {
         e.preventDefault();
 
-        $('.btn-form').prop("disabled",true);;
+        $('.btn-form').prop("disabled",true);
         $('.progress-container').removeClass('d-none');
+        clear_download_box();
         progress();
         process();
     });
+
+    function clear_download_box(){
+      var tb_v = $('#tbody_video').children();
+      var tb_w_s = $('#tbody_vid_w_s').children();
+      var tb_a = $('#tbody_audio').children();
+
+      for (var i = 1; i < tb_v.length; i++){
+          tb_v[i].remove();
+      }
+      for (var i = 1; i < tb_w_s.length; i++){
+          tb_w_s[i].remove();
+      }
+      for (var i = 1; i < tb_a.length; i++){
+          tb_a[i].remove();
+      }
+      $('#vid_w_s_item').addClass('d-none');
+      $('#audio_items').addClass('d-none');
+    }
 
     // Progress bar
     var interval,
@@ -53,34 +72,80 @@ $(function () {
             stopProgress();
 
             const result = JSON.parse(xhr.responseText);
-            console.log(result);
             if(!result.error){
               $('.download-box').removeClass('d-none');
+
+              $('img').attr('src', result.thumbnail);
+              $('.title').text(result.title);
+              $('#duration').text(result.duration);
+
               var videos = result.video_streams;
-              var tbody_video = document.getElementById('tbody_video');
-              console.log(videos);
               for(var i = 0; i < videos.length; i++){
-                console.log(tbody_video);
-                console.log(videos[i].resolution);
-                tbody_video.innerHtml += '<tr>' +
+                $('#tbody_video').append('<tr>' +
                    '<td class="align-middle py-4">' +
                       '<span class="d-block">' +
-                      videos[i].resolution +
-                      '<span class="badge bg-gradient-danger">HD</span>' +
+                      videos[i].resolution + '(.' + videos[i].ext + ')' +
+                      (videos[i].resolution == '1080p' || videos[i].resolution == '720p' ? '<span class="badge bg-gradient-danger">HD</span>': '') +
                       '</span>' +
                    '</td>' +
                    '<td class="align-middle">' +
                       '<span class="d-block">' + videos[i].filesize + '</span>' +
                    '</td>' +
                    '<td class="align-middle">' +
-                      '<a class="btn mb-0" href="' + videos[i].video_url + '" title="Download" style="background-color: #123c55;">' +
+                      '<a class="btn mb-0" href="' + videos[i].video_url + '" title="Download">' +
                       '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
                       '</a>' +
                    '</td>' +
-                '</tr>';
+                '</tr>');
               }
 
-              var $scollTo = $(".download-box");
+              if ('video_without_sound' in result &&  result.video_without_sound.length > 0){
+                var vid_w_s = result.video_without_sound;
+                $('#vid_w_s_item').removeClass('d-none');
+                for(var i = 0; i < vid_w_s.length; i++){
+                  $('#tbody_vid_w_s').append('<tr>' +
+                     '<td class="align-middle py-4">' +
+                        '<span class="d-block">' +
+                        vid_w_s[i].resolution + '(.' + vid_w_s[i].ext + ')' +
+                        (vid_w_s[i].resolution == '1080p' || vid_w_s[i].resolution == '720p' ? '<span class="badge bg-gradient-danger">HD</span>': '') +
+                        '</span>' +
+                     '</td>' +
+                     '<td class="align-middle">' +
+                        '<span class="d-block">' + vid_w_s[i].filesize + '</span>' +
+                     '</td>' +
+                     '<td class="align-middle">' +
+                        '<a class="btn mb-0" href="' + vid_w_s[i].video_url + '" title="Download">' +
+                        '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
+                        '</a>' +
+                     '</td>' +
+                  '</tr>');
+                }
+              }
+
+              if ('audio_streams' in result &&  result.audio_streams.length > 0){
+                var audio = result.audio_streams;
+                $('#audio_items').removeClass('d-none');
+                for(var i = 0; i < audio.length; i++){
+                  $('#tbody_audio').append('<tr>' +
+                     '<td class="align-middle py-4">' +
+                        '<span class="d-block">' +
+                        audio[i].resolution + '(.' + audio[i].ext + ')' +
+                        '</span>' +
+                     '</td>' +
+                     '<td class="align-middle">' +
+                        '<span class="d-block">' + audio[i].filesize + '</span>' +
+                     '</td>' +
+                     '<td class="align-middle">' +
+                        '<a class="btn mb-0" href="' + audio[i].video_url + '" title="Download">' +
+                        '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
+                        '</a>' +
+                     '</td>' +
+                  '</tr>');
+                }
+              }
+
+              $('.btn-form').prop("disabled",false);
+              var $scollTo = $("#video-form");
               $([document.documentElement, document.body]).animate({
                   scrollTop: $scollTo.offset().top -20
               }, 750);
