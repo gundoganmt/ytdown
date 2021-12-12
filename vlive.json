@@ -1,0 +1,251 @@
+{
+  "abr": 192,
+  "automatic_captions": {},
+  "channel": "THE BOYZ",
+  "channel_id": "DE341F",
+  "comment_count": 2217,
+  "creator": "THE BOYZ",
+  "display_id": "271549",
+  "duration": 37,
+  "ext": "mp4",
+  "extractor": "vlive",
+  "extractor_key": "VLive",
+  "filesize": 8664430,
+  "format": "avc1_720P - 720x1280",
+  "format_id": "avc1_720P",
+  "formats": [
+    {
+      "abr": 64,
+      "ext": "m3u8",
+      "filesize": null,
+      "format": "HLS_144P - 144x256",
+      "format_id": "HLS_144P",
+      "height": 256,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "m3u8_native",
+      "tbr": 140,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_72/hls/4f5784b4-59b9-11ec-861e-d21d68c12640.m3u8?__gda__=1639161254_06191705c1c645fa819715297aacf905",
+      "vbr": 76,
+      "width": 144
+    },
+    {
+      "abr": 64,
+      "ext": "mp4",
+      "filesize": 668970,
+      "format": "avc1_144P - 144x256",
+      "format_id": "avc1_144P",
+      "height": 256,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "http",
+      "tbr": 140,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_256/4d91436c-59b9-11ec-b9b1-5ebafcba569f.mp4?__gda__=1639161254_b9eccf40eafba899d3dc28fb9117faff",
+      "vbr": 76,
+      "width": 144
+    },
+    {
+      "abr": 96,
+      "ext": "m3u8",
+      "filesize": null,
+      "format": "HLS_270P - 270x480",
+      "format_id": "HLS_270P",
+      "height": 480,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "m3u8_native",
+      "tbr": 475,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_72/hls/532fb529-59b9-11ec-8a21-246e963a49b9.m3u8?__gda__=1639161254_06191705c1c645fa819715297aacf905",
+      "vbr": 379,
+      "width": 270
+    },
+    {
+      "abr": 96,
+      "ext": "mp4",
+      "filesize": 2227694,
+      "format": "avc1_270P - 270x480",
+      "format_id": "avc1_270P",
+      "height": 480,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "http",
+      "tbr": 475,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_497/4d8cfdab-59b9-11ec-b9b1-5ebafcba569f.mp4?__gda__=1639161254_a0bbddb7230ce9c65a8851c11039c30d",
+      "vbr": 379,
+      "width": 270
+    },
+    {
+      "abr": 96,
+      "ext": "m3u8",
+      "filesize": null,
+      "format": "HLS_360P - 360x640",
+      "format_id": "HLS_360P",
+      "height": 640,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "m3u8_native",
+      "tbr": 742,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_72/hls/525385bf-59b9-11ec-8a21-246e963a49b9.m3u8?__gda__=1639161254_06191705c1c645fa819715297aacf905",
+      "vbr": 646,
+      "width": 360
+    },
+    {
+      "abr": 96,
+      "ext": "mp4",
+      "filesize": 3471291,
+      "format": "avc1_360P - 360x640",
+      "format_id": "avc1_360P",
+      "height": 640,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "http",
+      "tbr": 742,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_8/4d800558-59b9-11ec-b9b1-5ebafcba569f.mp4?__gda__=1639161254_ab027f2d7ab294e7047ce14bbc3e618f",
+      "vbr": 646,
+      "width": 360
+    },
+    {
+      "abr": 128,
+      "ext": "m3u8",
+      "filesize": null,
+      "format": "HLS_480P - 480x854",
+      "format_id": "HLS_480P",
+      "height": 854,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "m3u8_native",
+      "tbr": 937,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_72/hls/54caeebc-59b9-11ec-861e-d21d68c12640.m3u8?__gda__=1639161254_06191705c1c645fa819715297aacf905",
+      "vbr": 809,
+      "width": 480
+    },
+    {
+      "abr": 128,
+      "ext": "mp4",
+      "filesize": 4387611,
+      "format": "avc1_480P - 480x854",
+      "format_id": "avc1_480P",
+      "height": 854,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "http",
+      "tbr": 937,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_366/4d844b19-59b9-11ec-b9b1-5ebafcba569f.mp4?__gda__=1639161254_28ccd30986d8d4d5b0af6cee00f8bde0",
+      "vbr": 809,
+      "width": 480
+    },
+    {
+      "abr": 192,
+      "ext": "m3u8",
+      "filesize": null,
+      "format": "HLS_720P - 720x1280",
+      "format_id": "HLS_720P",
+      "height": 1280,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "m3u8_native",
+      "tbr": 1855,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_72/hls/588f978f-59b9-11ec-ac5a-625f9a4201fc.m3u8?__gda__=1639161254_06191705c1c645fa819715297aacf905",
+      "vbr": 1663,
+      "width": 720
+    },
+    {
+      "abr": 192,
+      "ext": "mp4",
+      "filesize": 8664430,
+      "format": "avc1_720P - 720x1280",
+      "format_id": "avc1_720P",
+      "height": 1280,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+      },
+      "protocol": "http",
+      "tbr": 1855,
+      "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_287/4d88b7ea-59b9-11ec-b9b1-5ebafcba569f.mp4?__gda__=1639161254_44f1c80cc8f0f76a7654fb7187613e75",
+      "vbr": 1663,
+      "width": 720
+    }
+  ],
+  "height": 1280,
+  "http_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-us,en;q=0.5",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3605.1 Safari/537.36"
+  },
+  "id": "271549",
+  "like_count": 96548,
+  "playlist": null, 
+  "playlist_index": null,
+  "protocol": "http",
+  "requested_subtitles": null,
+  "subtitles": {},
+  "tbr": 1855,
+  "thumbnail": "http://video.phinf.naver.net/20211210_285/1639141295457UnqNT_JPEG/4c7cc577-59b9-11ec-9b44-a0369ff95678_03.jpg",
+  "thumbnails": [
+    {
+      "id": "0",
+      "url": "http://video.phinf.naver.net/20211210_285/1639141295457UnqNT_JPEG/4c7cc577-59b9-11ec-9b44-a0369ff95678_03.jpg"
+    }
+  ],
+  "title": "DJ\ucf65\ud83c\udfb8",
+  "uploader": "V_Live2Vod",
+  "uploader_id": "V_LIVE2VOD_271549",
+  "uploader_url": "http://vlive.tv",
+  "url": "http://globalv.p.naverrmc.edgesuite.net/c/read/v2/VOD_ALPHA/global_v_2021_12_10_287/4d88b7ea-59b9-11ec-b9b1-5ebafcba569f.mp4?__gda__=1639161254_44f1c80cc8f0f76a7654fb7187613e75",
+  "vbr": 1663,
+  "view_count": 19326,
+  "webpage_url": "https://www.vlive.tv/video/271549",
+  "webpage_url_basename": "271549",
+  "width": 720
+}

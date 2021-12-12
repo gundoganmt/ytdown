@@ -1,0 +1,3098 @@
+{
+  "abr": null,
+  "acodec": "mp4a.40.2",
+  "comment_count": 2778,
+  "description": "Follow on:\nfacebook.com/TSOphotography for more photos, videos and updates. \nThis was filmed between 4th and 11th April 2011. I had the pleasure of visiting El Teide.\nSpain´s highest mountain  @(3718m) is one of the best places in the world to photograph the stars and is also the location of Teide Observatories, considered to be one of the world´s best observatories. \nThe goal was to capture the beautiful Milky Way galaxy along with one of the most amazing mountains I know El Teide. I have to say this was one of the most exhausting trips I have done. There was a lot of hiking at high altitudes and probably less than 10 hours of sleep in total for the whole week. Having been here 10-11 times before I had a long list of must-see locations I wanted to capture for this movie, but I am still not 100% used to carrying around so much gear required for time-lapse movies.\n\nA large sandstorm hit the Sahara Desert on the 9th April (http://bit.ly/g3tsDW) and at approx 3am in the night the sandstorm hit me, making  it nearly impossible to see the sky with my own eyes.\nInterestingly enough my camera was set for a 5 hour sequence of the milky way during this time and I was sure my whole scene was ruined. To my surprise, my camera had managed to capture the sandstorm which was backlit by Grand Canary Island making it look like golden clouds. The Milky Way was shining through the clouds, making the stars sparkle in an interesting way. So if you ever wondered how the Milky Way would look through a Sahara sandstorm, look at 00:32.\nAvailable in Digital Cinema 4k.\nFollow Facebook: facebook.com/TSOPhotography\nFollow Twitter:\ntwitter.com/TSOPhotography\nFollow Google+:\nplus.google.com/107543460658107759808\nPress/licensing/projects contact: tsophotography@gmail.com\nMusic by my friend: Ludovico Einaudi - \"Nuvole bianche\" with permission.\nPlease support the artist here:\nitunes.apple.com/us/album/una-mattina/id217799399",
+  "display_id": "22439234",
+  "duration": 189,
+  "ext": "mp4",
+  "extractor": "vimeo",
+  "extractor_key": "Vimeo",
+  "format": "dash-fastly_skyfire_sep-video-46823549 - 1280x720 (DASH video)+dash-fastly_skyfire_sep-audio-46823549 - audio only (DASH audio)",
+  "format_id": "dash-fastly_skyfire_sep-video-46823549+dash-fastly_skyfire_sep-audio-46823549",
+  "formats": [
+    {
+      "ext": "mp4",
+      "format": "hls-akfire_interconnect_quic_sep-audio-high-audio - audio only",
+      "format_id": "hls-akfire_interconnect_quic_sep-audio-high-audio",
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -50,
+      "protocol": "m3u8_native",
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/audio/46823549/playlist.m3u8",
+      "vcodec": "none"
+    },
+    {
+      "ext": "mp4",
+      "format": "hls-akfire_interconnect_quic_sep-audio-medium-audio - audio only",
+      "format_id": "hls-akfire_interconnect_quic_sep-audio-medium-audio",
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -50,
+      "protocol": "m3u8_native",
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/audio/46823154/playlist.m3u8",
+      "vcodec": "none"
+    },
+    {
+      "ext": "mp4",
+      "format": "hls-fastly_skyfire_sep-audio-high-audio - audio only",
+      "format_id": "hls-fastly_skyfire_sep-audio-high-audio",
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -50,
+      "protocol": "m3u8_native",
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/audio/46823549/playlist.m3u8",
+      "vcodec": "none"
+    },
+    {
+      "ext": "mp4",
+      "format": "hls-fastly_skyfire_sep-audio-medium-audio - audio only",
+      "format_id": "hls-fastly_skyfire_sep-audio-medium-audio",
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -50,
+      "protocol": "m3u8_native",
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/audio/46823154/playlist.m3u8",
+      "vcodec": "none"
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "m4a_dash",
+      "ext": "m4a",
+      "filesize": null,
+      "format": "dash-akfire_interconnect_quic_sep-audio-46823154 - audio only (DASH audio)",
+      "format_id": "dash-akfire_interconnect_quic_sep-audio-46823154",
+      "format_note": "DASH audio",
+      "fps": null,
+      "fragment_base_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "../audio/46823154/chop/segment-0.mp4"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-2.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.800362811791382,
+          "path": "../audio/46823154/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.546485260770975,
+          "path": "../audio/46823154/chop/segment-5.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.198185941043084,
+          "path": "../audio/46823154/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.243083900226758,
+          "path": "../audio/46823154/chop/segment-8.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-9.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.6378231292517,
+          "path": "../audio/46823154/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.196643990929704,
+          "path": "../audio/46823154/chop/segment-13.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.962902494331066,
+          "path": "../audio/46823154/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-16.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-18.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-19.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-21.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-23.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-24.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-26.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-27.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.899410430839002,
+          "path": "../audio/46823154/chop/segment-29.m4s"
+        }
+      ],
+      "height": null,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -50,
+      "protocol": "http_dash_segments",
+      "tbr": 113,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "none",
+      "width": null
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "m4a_dash",
+      "ext": "m4a",
+      "filesize": null,
+      "format": "dash-fastly_skyfire_sep-audio-46823154 - audio only (DASH audio)",
+      "format_id": "dash-fastly_skyfire_sep-audio-46823154",
+      "format_note": "DASH audio",
+      "fps": null,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "../audio/46823154/chop/segment-0.mp4"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-2.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.800362811791382,
+          "path": "../audio/46823154/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.546485260770975,
+          "path": "../audio/46823154/chop/segment-5.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.198185941043084,
+          "path": "../audio/46823154/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.243083900226758,
+          "path": "../audio/46823154/chop/segment-8.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-9.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.6378231292517,
+          "path": "../audio/46823154/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.196643990929704,
+          "path": "../audio/46823154/chop/segment-13.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.962902494331066,
+          "path": "../audio/46823154/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-16.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-18.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-19.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-21.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-23.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-24.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-26.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823154/chop/segment-27.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823154/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.899410430839002,
+          "path": "../audio/46823154/chop/segment-29.m4s"
+        }
+      ],
+      "height": null,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -50,
+      "protocol": "http_dash_segments",
+      "tbr": 113,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "none",
+      "width": null
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "m4a_dash",
+      "ext": "m4a",
+      "filesize": null,
+      "format": "dash-akfire_interconnect_quic_sep-audio-46823549 - audio only (DASH audio)",
+      "format_id": "dash-akfire_interconnect_quic_sep-audio-46823549",
+      "format_note": "DASH audio",
+      "fps": null,
+      "fragment_base_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "../audio/46823549/chop/segment-0.mp4"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-2.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.800362811791382,
+          "path": "../audio/46823549/chop/segment-4.m4s"
+        },
+        {
+          "duration": 8.382403628117913,
+          "path": "../audio/46823549/chop/segment-5.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-6.m4s"
+        },
+        {
+          "duration": 6.733786848072563,
+          "path": "../audio/46823549/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.800362811791382,
+          "path": "../audio/46823549/chop/segment-8.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-9.m4s"
+        },
+        {
+          "duration": 8.150204081632653,
+          "path": "../audio/46823549/chop/segment-10.m4s"
+        },
+        {
+          "duration": 8.544943310657596,
+          "path": "../audio/46823549/chop/segment-11.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.057324263038549,
+          "path": "../audio/46823549/chop/segment-13.m4s"
+        },
+        {
+          "duration": 8.17342403628118,
+          "path": "../audio/46823549/chop/segment-14.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-16.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-18.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-19.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-21.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-23.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-24.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-25.m4s"
+        },
+        {
+          "duration": 7.63936507936508,
+          "path": "../audio/46823549/chop/segment-26.m4s"
+        },
+        {
+          "duration": 8.312743764172335,
+          "path": "../audio/46823549/chop/segment-27.m4s"
+        },
+        {
+          "duration": 4.899410430839002,
+          "path": "../audio/46823549/chop/segment-28.m4s"
+        }
+      ],
+      "height": null,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -50,
+      "protocol": "http_dash_segments",
+      "tbr": 160,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "none",
+      "width": null
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "m4a_dash",
+      "ext": "m4a",
+      "filesize": null,
+      "format": "dash-fastly_skyfire_sep-audio-46823549 - audio only (DASH audio)",
+      "format_id": "dash-fastly_skyfire_sep-audio-46823549",
+      "format_note": "DASH audio",
+      "fps": null,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "../audio/46823549/chop/segment-0.mp4"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-2.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.800362811791382,
+          "path": "../audio/46823549/chop/segment-4.m4s"
+        },
+        {
+          "duration": 8.382403628117913,
+          "path": "../audio/46823549/chop/segment-5.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-6.m4s"
+        },
+        {
+          "duration": 6.733786848072563,
+          "path": "../audio/46823549/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.800362811791382,
+          "path": "../audio/46823549/chop/segment-8.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-9.m4s"
+        },
+        {
+          "duration": 8.150204081632653,
+          "path": "../audio/46823549/chop/segment-10.m4s"
+        },
+        {
+          "duration": 8.544943310657596,
+          "path": "../audio/46823549/chop/segment-11.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.057324263038549,
+          "path": "../audio/46823549/chop/segment-13.m4s"
+        },
+        {
+          "duration": 8.17342403628118,
+          "path": "../audio/46823549/chop/segment-14.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-16.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-18.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-19.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-21.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-23.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-24.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-25.m4s"
+        },
+        {
+          "duration": 7.63936507936508,
+          "path": "../audio/46823549/chop/segment-26.m4s"
+        },
+        {
+          "duration": 8.312743764172335,
+          "path": "../audio/46823549/chop/segment-27.m4s"
+        },
+        {
+          "duration": 4.899410430839002,
+          "path": "../audio/46823549/chop/segment-28.m4s"
+        }
+      ],
+      "height": null,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -50,
+      "protocol": "http_dash_segments",
+      "tbr": 160,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "none",
+      "width": null
+    },
+    {
+      "acodec": "none",
+      "ext": "mp4",
+      "format": "hls-akfire_interconnect_quic_sep-396 - 480x272",
+      "format_id": "hls-akfire_interconnect_quic_sep-396",
+      "fps": 30,
+      "height": 272,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -40,
+      "protocol": "m3u8_native",
+      "tbr": 396,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478/playlist.m3u8",
+      "vcodec": "avc1.42C01E",
+      "width": 480
+    },
+    {
+      "acodec": "none",
+      "ext": "mp4",
+      "format": "hls-fastly_skyfire_sep-396 - 480x272",
+      "format_id": "hls-fastly_skyfire_sep-396",
+      "fps": 30,
+      "height": 272,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -40,
+      "protocol": "m3u8_native",
+      "tbr": 396,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478/playlist.m3u8",
+      "vcodec": "avc1.42C01E",
+      "width": 480
+    },
+    {
+      "acodec": "none",
+      "asr": null,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-akfire_interconnect_quic_sep-video-46822478 - 480x272 (DASH video)",
+      "format_id": "dash-akfire_interconnect_quic_sep-video-46822478",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46822478/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46822478/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.5,
+          "path": "46822478/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.333333333333333,
+          "path": "46822478/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.133333333333333,
+          "path": "46822478/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-9.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.433333333333334,
+          "path": "46822478/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.4,
+          "path": "46822478/chop/segment-13.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.033333333333333,
+          "path": "46822478/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-26.m4s"
+        },
+        {
+          "duration": 7.633333333333334,
+          "path": "46822478/chop/segment-27.m4s"
+        },
+        {
+          "duration": 5.466666666666667,
+          "path": "46822478/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.7,
+          "path": "46822478/chop/segment-29.m4s"
+        }
+      ],
+      "height": 272,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -40,
+      "protocol": "http_dash_segments",
+      "tbr": 442,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.42C01E",
+      "width": 480
+    },
+    {
+      "acodec": "none",
+      "asr": null,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-fastly_skyfire_sep-video-46822478 - 480x272 (DASH video)",
+      "format_id": "dash-fastly_skyfire_sep-video-46822478",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46822478/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46822478/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.5,
+          "path": "46822478/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.333333333333333,
+          "path": "46822478/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.133333333333333,
+          "path": "46822478/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-9.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.433333333333334,
+          "path": "46822478/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.4,
+          "path": "46822478/chop/segment-13.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.033333333333333,
+          "path": "46822478/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-26.m4s"
+        },
+        {
+          "duration": 7.633333333333334,
+          "path": "46822478/chop/segment-27.m4s"
+        },
+        {
+          "duration": 5.466666666666667,
+          "path": "46822478/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.7,
+          "path": "46822478/chop/segment-29.m4s"
+        }
+      ],
+      "height": 272,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -40,
+      "protocol": "http_dash_segments",
+      "tbr": 442,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.42C01E",
+      "width": 480
+    },
+    {
+      "acodec": "none",
+      "ext": "mp4",
+      "format": "hls-akfire_interconnect_quic_sep-863 - 640x360",
+      "format_id": "hls-akfire_interconnect_quic_sep-863",
+      "fps": 30,
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -40,
+      "protocol": "m3u8_native",
+      "tbr": 863,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46823154/playlist.m3u8",
+      "vcodec": "avc1.64001F",
+      "width": 640
+    },
+    {
+      "acodec": "none",
+      "ext": "mp4",
+      "format": "hls-fastly_skyfire_sep-863 - 640x360",
+      "format_id": "hls-fastly_skyfire_sep-863",
+      "fps": 30,
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -40,
+      "protocol": "m3u8_native",
+      "tbr": 863,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46823154/playlist.m3u8",
+      "vcodec": "avc1.64001F",
+      "width": 640
+    },
+    {
+      "acodec": "none",
+      "asr": null,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-akfire_interconnect_quic_sep-video-46823154 - 640x360 (DASH video)",
+      "format_id": "dash-akfire_interconnect_quic_sep-video-46823154",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46823154/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823154/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.533333333333333,
+          "path": "46823154/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.2,
+          "path": "46823154/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.233333333333333,
+          "path": "46823154/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-9.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.633333333333333,
+          "path": "46823154/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.2,
+          "path": "46823154/chop/segment-13.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.966666666666667,
+          "path": "46823154/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-26.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-27.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.866666666666666,
+          "path": "46823154/chop/segment-29.m4s"
+        }
+      ],
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -40,
+      "protocol": "http_dash_segments",
+      "tbr": 1223,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.64001F",
+      "width": 640
+    },
+    {
+      "acodec": "none",
+      "asr": null,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-fastly_skyfire_sep-video-46823154 - 640x360 (DASH video)",
+      "format_id": "dash-fastly_skyfire_sep-video-46823154",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46823154/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823154/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.533333333333333,
+          "path": "46823154/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.2,
+          "path": "46823154/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.233333333333333,
+          "path": "46823154/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-9.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.633333333333333,
+          "path": "46823154/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.2,
+          "path": "46823154/chop/segment-13.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.966666666666667,
+          "path": "46823154/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-26.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-27.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.866666666666666,
+          "path": "46823154/chop/segment-29.m4s"
+        }
+      ],
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -40,
+      "protocol": "http_dash_segments",
+      "tbr": 1223,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.64001F",
+      "width": 640
+    },
+    {
+      "acodec": "none",
+      "ext": "mp4",
+      "format": "hls-akfire_interconnect_quic_sep-2647 - 1280x720",
+      "format_id": "hls-akfire_interconnect_quic_sep-2647",
+      "fps": 30,
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -40,
+      "protocol": "m3u8_native",
+      "tbr": 2647,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46823549/playlist.m3u8",
+      "vcodec": "avc1.64001F",
+      "width": 1280
+    },
+    {
+      "acodec": "none",
+      "ext": "mp4",
+      "format": "hls-fastly_skyfire_sep-2647 - 1280x720",
+      "format_id": "hls-fastly_skyfire_sep-2647",
+      "fps": 30,
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46823549,46823154,46822478/master.m3u8",
+      "preference": -40,
+      "protocol": "m3u8_native",
+      "tbr": 2647,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46823549/playlist.m3u8",
+      "vcodec": "avc1.64001F",
+      "width": 1280
+    },
+    {
+      "acodec": "none",
+      "asr": null,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-akfire_interconnect_quic_sep-video-46823549 - 1280x720 (DASH video)",
+      "format_id": "dash-akfire_interconnect_quic_sep-video-46823549",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46823549/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-4.m4s"
+        },
+        {
+          "duration": 8.366666666666667,
+          "path": "46823549/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-6.m4s"
+        },
+        {
+          "duration": 6.733333333333333,
+          "path": "46823549/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-9.m4s"
+        },
+        {
+          "duration": 8.133333333333333,
+          "path": "46823549/chop/segment-10.m4s"
+        },
+        {
+          "duration": 8.566666666666666,
+          "path": "46823549/chop/segment-11.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.066666666666666,
+          "path": "46823549/chop/segment-13.m4s"
+        },
+        {
+          "duration": 8.166666666666666,
+          "path": "46823549/chop/segment-14.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-25.m4s"
+        },
+        {
+          "duration": 7.633333333333334,
+          "path": "46823549/chop/segment-26.m4s"
+        },
+        {
+          "duration": 8.3,
+          "path": "46823549/chop/segment-27.m4s"
+        },
+        {
+          "duration": 4.866666666666666,
+          "path": "46823549/chop/segment-28.m4s"
+        }
+      ],
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -40,
+      "protocol": "http_dash_segments",
+      "tbr": 4119,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.64001F",
+      "width": 1280
+    },
+    {
+      "acodec": "none",
+      "asr": null,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-fastly_skyfire_sep-video-46823549 - 1280x720 (DASH video)",
+      "format_id": "dash-fastly_skyfire_sep-video-46823549",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46823549/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-4.m4s"
+        },
+        {
+          "duration": 8.366666666666667,
+          "path": "46823549/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-6.m4s"
+        },
+        {
+          "duration": 6.733333333333333,
+          "path": "46823549/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-9.m4s"
+        },
+        {
+          "duration": 8.133333333333333,
+          "path": "46823549/chop/segment-10.m4s"
+        },
+        {
+          "duration": 8.566666666666666,
+          "path": "46823549/chop/segment-11.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.066666666666666,
+          "path": "46823549/chop/segment-13.m4s"
+        },
+        {
+          "duration": 8.166666666666666,
+          "path": "46823549/chop/segment-14.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-25.m4s"
+        },
+        {
+          "duration": 7.633333333333334,
+          "path": "46823549/chop/segment-26.m4s"
+        },
+        {
+          "duration": 8.3,
+          "path": "46823549/chop/segment-27.m4s"
+        },
+        {
+          "duration": 4.866666666666666,
+          "path": "46823549/chop/segment-28.m4s"
+        }
+      ],
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -40,
+      "protocol": "http_dash_segments",
+      "tbr": 4119,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.64001F",
+      "width": 1280
+    },
+    {
+      "ext": "mp4",
+      "format": "http-240p - 480x272",
+      "format_id": "http-240p",
+      "fps": 30,
+      "height": 272,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "tbr": null,
+      "url": "https://vod-progressive.akamaized.net/exp=1638950721~acl=%2A%2F46822478.mp4%2A~hmac=afedee8c50f553e0117a29ddaaae0dce0e832f562e1a1b3e636079234230cdfb/vimeo-prod-skyfire-std-us/01/4487/0/22439234/46822478.mp4",
+      "width": 480
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "ext": "mp4",
+      "format": "hls-akfire_interconnect_quic-382 - 480x272",
+      "format_id": "hls-akfire_interconnect_quic-382",
+      "fps": 30,
+      "height": 272,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46823549,46823154,46822478/master.m3u8",
+      "preference": null,
+      "protocol": "m3u8_native",
+      "tbr": 382,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478/playlist.m3u8",
+      "vcodec": "avc1.42C01E",
+      "width": 480
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "ext": "mp4",
+      "format": "hls-fastly_skyfire-382 - 480x272",
+      "format_id": "hls-fastly_skyfire-382",
+      "fps": 30,
+      "height": 272,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46823549,46823154,46822478/master.m3u8",
+      "preference": null,
+      "protocol": "m3u8_native",
+      "tbr": 382,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478/playlist.m3u8",
+      "vcodec": "avc1.42C01E",
+      "width": 480
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-akfire_interconnect_quic-video-46822478 - 480x272 (DASH video)",
+      "format_id": "dash-akfire_interconnect_quic-video-46822478",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46822478/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46822478/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.5,
+          "path": "46822478/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.333333333333333,
+          "path": "46822478/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.133333333333333,
+          "path": "46822478/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-9.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.433333333333334,
+          "path": "46822478/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.4,
+          "path": "46822478/chop/segment-13.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.033333333333333,
+          "path": "46822478/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-26.m4s"
+        },
+        {
+          "duration": 7.633333333333334,
+          "path": "46822478/chop/segment-27.m4s"
+        },
+        {
+          "duration": 5.466666666666667,
+          "path": "46822478/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.7,
+          "path": "46822478/chop/segment-29.m4s"
+        }
+      ],
+      "height": 272,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "protocol": "http_dash_segments",
+      "tbr": 539,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.42C01E",
+      "width": 480
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-fastly_skyfire-video-46822478 - 480x272 (DASH video)",
+      "format_id": "dash-fastly_skyfire-video-46822478",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46822478/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46822478/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.5,
+          "path": "46822478/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.333333333333333,
+          "path": "46822478/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.133333333333333,
+          "path": "46822478/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-9.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.433333333333334,
+          "path": "46822478/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.4,
+          "path": "46822478/chop/segment-13.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.033333333333333,
+          "path": "46822478/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46822478/chop/segment-26.m4s"
+        },
+        {
+          "duration": 7.633333333333334,
+          "path": "46822478/chop/segment-27.m4s"
+        },
+        {
+          "duration": 5.466666666666667,
+          "path": "46822478/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.7,
+          "path": "46822478/chop/segment-29.m4s"
+        }
+      ],
+      "height": 272,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "protocol": "http_dash_segments",
+      "tbr": 539,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.42C01E",
+      "width": 480
+    },
+    {
+      "ext": "mp4",
+      "format": "http-360p - 640x360",
+      "format_id": "http-360p",
+      "fps": 30,
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "tbr": null,
+      "url": "https://vod-progressive.akamaized.net/exp=1638950721~acl=%2A%2F46823154.mp4%2A~hmac=b9462368167ea7f9e52b915c22fe00a0f660e8868678fa9389248556b7db6dfe/vimeo-prod-skyfire-std-us/01/4487/0/22439234/46823154.mp4",
+      "width": 640
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "ext": "mp4",
+      "format": "hls-akfire_interconnect_quic-863 - 640x360",
+      "format_id": "hls-akfire_interconnect_quic-863",
+      "fps": 30,
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46823549,46823154,46822478/master.m3u8",
+      "preference": null,
+      "protocol": "m3u8_native",
+      "tbr": 863,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46823154/playlist.m3u8",
+      "vcodec": "avc1.64001F",
+      "width": 640
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "ext": "mp4",
+      "format": "hls-fastly_skyfire-863 - 640x360",
+      "format_id": "hls-fastly_skyfire-863",
+      "fps": 30,
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46823549,46823154,46822478/master.m3u8",
+      "preference": null,
+      "protocol": "m3u8_native",
+      "tbr": 863,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46823154/playlist.m3u8",
+      "vcodec": "avc1.64001F",
+      "width": 640
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-akfire_interconnect_quic-video-46823154 - 640x360 (DASH video)",
+      "format_id": "dash-akfire_interconnect_quic-video-46823154",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46823154/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823154/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.533333333333333,
+          "path": "46823154/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.2,
+          "path": "46823154/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.233333333333333,
+          "path": "46823154/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-9.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.633333333333333,
+          "path": "46823154/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.2,
+          "path": "46823154/chop/segment-13.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.966666666666667,
+          "path": "46823154/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-26.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-27.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.866666666666666,
+          "path": "46823154/chop/segment-29.m4s"
+        }
+      ],
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "protocol": "http_dash_segments",
+      "tbr": 1334,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.64001F",
+      "width": 640
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-fastly_skyfire-video-46823154 - 640x360 (DASH video)",
+      "format_id": "dash-fastly_skyfire-video-46823154",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46823154/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823154/chop/segment-4.m4s"
+        },
+        {
+          "duration": 7.533333333333333,
+          "path": "46823154/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-6.m4s"
+        },
+        {
+          "duration": 7.2,
+          "path": "46823154/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.233333333333333,
+          "path": "46823154/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-9.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-10.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-11.m4s"
+        },
+        {
+          "duration": 8.633333333333333,
+          "path": "46823154/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.2,
+          "path": "46823154/chop/segment-13.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-14.m4s"
+        },
+        {
+          "duration": 8.966666666666667,
+          "path": "46823154/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-25.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-26.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-27.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823154/chop/segment-28.m4s"
+        },
+        {
+          "duration": 4.866666666666666,
+          "path": "46823154/chop/segment-29.m4s"
+        }
+      ],
+      "height": 360,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "protocol": "http_dash_segments",
+      "tbr": 1334,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.64001F",
+      "width": 640
+    },
+    {
+      "ext": "mp4",
+      "format": "http-720p - 1280x720",
+      "format_id": "http-720p",
+      "fps": 30,
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "protocol": "https",
+      "tbr": null,
+      "url": "https://vod-progressive.akamaized.net/exp=1638950721~acl=%2A%2F46823549.mp4%2A~hmac=b658aafc506d52bacf596aaefc5161b4c1c35e06db48061a17bcc4f5fbcda22e/vimeo-prod-skyfire-std-us/01/4487/0/22439234/46823549.mp4",
+      "width": 1280
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "ext": "mp4",
+      "format": "hls-akfire_interconnect_quic-2646 - 1280x720",
+      "format_id": "hls-akfire_interconnect_quic-2646",
+      "fps": 30,
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46823549,46823154,46822478/master.m3u8",
+      "preference": null,
+      "protocol": "m3u8_native",
+      "tbr": 2646,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46823549/playlist.m3u8",
+      "vcodec": "avc1.64001F",
+      "width": 1280
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "ext": "mp4",
+      "format": "hls-fastly_skyfire-2646 - 1280x720",
+      "format_id": "hls-fastly_skyfire-2646",
+      "fps": 30,
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46823549,46823154,46822478/master.m3u8",
+      "preference": null,
+      "protocol": "m3u8_native",
+      "tbr": 2646,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46823549/playlist.m3u8",
+      "vcodec": "avc1.64001F",
+      "width": 1280
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-akfire_interconnect_quic-video-46823549 - 1280x720 (DASH video)",
+      "format_id": "dash-akfire_interconnect_quic-video-46823549",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46823549/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-4.m4s"
+        },
+        {
+          "duration": 8.366666666666667,
+          "path": "46823549/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-6.m4s"
+        },
+        {
+          "duration": 6.733333333333333,
+          "path": "46823549/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-9.m4s"
+        },
+        {
+          "duration": 8.133333333333333,
+          "path": "46823549/chop/segment-10.m4s"
+        },
+        {
+          "duration": 8.566666666666666,
+          "path": "46823549/chop/segment-11.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.066666666666666,
+          "path": "46823549/chop/segment-13.m4s"
+        },
+        {
+          "duration": 8.166666666666666,
+          "path": "46823549/chop/segment-14.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-25.m4s"
+        },
+        {
+          "duration": 7.633333333333334,
+          "path": "46823549/chop/segment-26.m4s"
+        },
+        {
+          "duration": 8.3,
+          "path": "46823549/chop/segment-27.m4s"
+        },
+        {
+          "duration": 4.866666666666666,
+          "path": "46823549/chop/segment-28.m4s"
+        }
+      ],
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "protocol": "http_dash_segments",
+      "tbr": 4278,
+      "url": "https://35vod-adaptive.akamaized.net/exp=1638950721~acl=%2F22439234%2F%2A~hmac=79b3b90ca8f205e61e73b7e5e7c5c2090cc4f10904bf6e3bf36d3c4545198d08/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.64001F",
+      "width": 1280
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-fastly_skyfire-video-46823549 - 1280x720 (DASH video)",
+      "format_id": "dash-fastly_skyfire-video-46823549",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46823549/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-4.m4s"
+        },
+        {
+          "duration": 8.366666666666667,
+          "path": "46823549/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-6.m4s"
+        },
+        {
+          "duration": 6.733333333333333,
+          "path": "46823549/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-9.m4s"
+        },
+        {
+          "duration": 8.133333333333333,
+          "path": "46823549/chop/segment-10.m4s"
+        },
+        {
+          "duration": 8.566666666666666,
+          "path": "46823549/chop/segment-11.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.066666666666666,
+          "path": "46823549/chop/segment-13.m4s"
+        },
+        {
+          "duration": 8.166666666666666,
+          "path": "46823549/chop/segment-14.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-25.m4s"
+        },
+        {
+          "duration": 7.633333333333334,
+          "path": "46823549/chop/segment-26.m4s"
+        },
+        {
+          "duration": 8.3,
+          "path": "46823549/chop/segment-27.m4s"
+        },
+        {
+          "duration": 4.866666666666666,
+          "path": "46823549/chop/segment-28.m4s"
+        }
+      ],
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "protocol": "http_dash_segments",
+      "tbr": 4278,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.64001F",
+      "width": 1280
+    }
+  ],
+  "fps": 30,
+  "height": 720,
+  "id": "22439234",
+  "is_live": false,
+  "license": "by-nc-nd",
+  "like_count": 100644,
+  "playlist": null,
+  "playlist_index": null,
+  "requested_formats": [
+    {
+      "acodec": "none",
+      "asr": null,
+      "container": "mp4_dash",
+      "ext": "mp4",
+      "filesize": null,
+      "format": "dash-fastly_skyfire_sep-video-46823549 - 1280x720 (DASH video)",
+      "format_id": "dash-fastly_skyfire_sep-video-46823549",
+      "format_note": "DASH video",
+      "fps": 30,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "46823549/chop/segment-0.mp4"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-2.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-4.m4s"
+        },
+        {
+          "duration": 8.366666666666667,
+          "path": "46823549/chop/segment-5.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-6.m4s"
+        },
+        {
+          "duration": 6.733333333333333,
+          "path": "46823549/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.8,
+          "path": "46823549/chop/segment-8.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-9.m4s"
+        },
+        {
+          "duration": 8.133333333333333,
+          "path": "46823549/chop/segment-10.m4s"
+        },
+        {
+          "duration": 8.566666666666666,
+          "path": "46823549/chop/segment-11.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.066666666666666,
+          "path": "46823549/chop/segment-13.m4s"
+        },
+        {
+          "duration": 8.166666666666666,
+          "path": "46823549/chop/segment-14.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-16.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-18.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-19.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-21.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-23.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-24.m4s"
+        },
+        {
+          "duration": 6,
+          "path": "46823549/chop/segment-25.m4s"
+        },
+        {
+          "duration": 7.633333333333334,
+          "path": "46823549/chop/segment-26.m4s"
+        },
+        {
+          "duration": 8.3,
+          "path": "46823549/chop/segment-27.m4s"
+        },
+        {
+          "duration": 4.866666666666666,
+          "path": "46823549/chop/segment-28.m4s"
+        }
+      ],
+      "height": 720,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -40,
+      "protocol": "http_dash_segments",
+      "tbr": 4119,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "avc1.64001F",
+      "width": 1280
+    },
+    {
+      "acodec": "mp4a.40.2",
+      "asr": 44100,
+      "container": "m4a_dash",
+      "ext": "m4a",
+      "filesize": null,
+      "format": "dash-fastly_skyfire_sep-audio-46823549 - audio only (DASH audio)",
+      "format_id": "dash-fastly_skyfire_sep-audio-46823549",
+      "format_note": "DASH audio",
+      "fps": null,
+      "fragment_base_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/../",
+      "fragments": [
+        {
+          "path": "../audio/46823549/chop/segment-0.mp4"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-1.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-2.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-3.m4s"
+        },
+        {
+          "duration": 8.800362811791382,
+          "path": "../audio/46823549/chop/segment-4.m4s"
+        },
+        {
+          "duration": 8.382403628117913,
+          "path": "../audio/46823549/chop/segment-5.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-6.m4s"
+        },
+        {
+          "duration": 6.733786848072563,
+          "path": "../audio/46823549/chop/segment-7.m4s"
+        },
+        {
+          "duration": 8.800362811791382,
+          "path": "../audio/46823549/chop/segment-8.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-9.m4s"
+        },
+        {
+          "duration": 8.150204081632653,
+          "path": "../audio/46823549/chop/segment-10.m4s"
+        },
+        {
+          "duration": 8.544943310657596,
+          "path": "../audio/46823549/chop/segment-11.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-12.m4s"
+        },
+        {
+          "duration": 8.057324263038549,
+          "path": "../audio/46823549/chop/segment-13.m4s"
+        },
+        {
+          "duration": 8.17342403628118,
+          "path": "../audio/46823549/chop/segment-14.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-15.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-16.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-17.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-18.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-19.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-20.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-21.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-22.m4s"
+        },
+        {
+          "duration": 6.013968253968254,
+          "path": "../audio/46823549/chop/segment-23.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-24.m4s"
+        },
+        {
+          "duration": 5.990748299319728,
+          "path": "../audio/46823549/chop/segment-25.m4s"
+        },
+        {
+          "duration": 7.63936507936508,
+          "path": "../audio/46823549/chop/segment-26.m4s"
+        },
+        {
+          "duration": 8.312743764172335,
+          "path": "../audio/46823549/chop/segment-27.m4s"
+        },
+        {
+          "duration": 4.899410430839002,
+          "path": "../audio/46823549/chop/segment-28.m4s"
+        }
+      ],
+      "height": null,
+      "http_headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Charset": "ISO-8859-1,utf-8;q=0.7,*;q=0.7",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en-us,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.0 Safari/537.36"
+      },
+      "language": null,
+      "manifest_url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "preference": -50,
+      "protocol": "http_dash_segments",
+      "tbr": 160,
+      "url": "https://skyfire.vimeocdn.com/1638950721-0x701b693294c51db4e8dee73e1ccc8f05b3945c4c/22439234/sep/video/46822478,46823154,46823549/master.mpd?base64_init=1",
+      "vcodec": "none",
+      "width": null
+    }
+  ],
+  "requested_subtitles": null,
+  "resolution": null,
+  "stretched_ratio": null,
+  "subtitles": {},
+  "thumbnail": "https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F145027281-cf3e3e047a52e2210b26bbcf42fcde909a80a7dd023a757b95af01936d065ec0-d_1280x720&src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png",
+  "thumbnails": [
+    {
+      "id": "base",
+      "url": "https://i.vimeocdn.com/video/145027281-cf3e3e047a52e2210b26bbcf42fcde909a80a7dd023a757b95af01936d065ec0-d",
+      "width": null
+    },
+    {
+      "id": "640",
+      "url": "https://i.vimeocdn.com/video/145027281-cf3e3e047a52e2210b26bbcf42fcde909a80a7dd023a757b95af01936d065ec0-d_640",
+      "width": 640
+    },
+    {
+      "id": "960",
+      "url": "https://i.vimeocdn.com/video/145027281-cf3e3e047a52e2210b26bbcf42fcde909a80a7dd023a757b95af01936d065ec0-d_960",
+      "width": 960
+    },
+    {
+      "id": "1280",
+      "url": "https://i.vimeocdn.com/video/145027281-cf3e3e047a52e2210b26bbcf42fcde909a80a7dd023a757b95af01936d065ec0-d_1280",
+      "width": 1280
+    }
+  ],
+  "timestamp": 1302856535,
+  "title": "The Mountain",
+  "upload_date": "20110415",
+  "uploader": "TSO Photography",
+  "uploader_id": "terjes",
+  "uploader_url": "https://vimeo.com/terjes",
+  "vbr": null,
+  "vcodec": "avc1.64001F",
+  "view_count": 78362943,
+  "webpage_url": "https://vimeo.com/22439234",
+  "webpage_url_basename": "22439234",
+  "width": 1280
+}
