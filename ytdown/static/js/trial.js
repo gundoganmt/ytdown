@@ -92,7 +92,7 @@ $(function () {
                       '<span class="d-block">' + videos[i].filesize + '</span>' +
                    '</td>' +
                    '<td class="align-middle">' +
-                      '<a class="btn mb-0" href="' + videos[i].video_url + '" title="Download">' +
+                      '<a class="btn mb-0" href="' + videos[i].token + '" title="Download">' +
                       '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
                       '</a>' +
                    '</td>' +
@@ -114,7 +114,7 @@ $(function () {
                         '<span class="d-block">' + vid_w_s[i].filesize + '</span>' +
                      '</td>' +
                      '<td class="align-middle">' +
-                        '<a class="btn mb-0" href="' + vid_w_s[i].video_url + '" title="Download">' +
+                        '<a class="btn mb-0" href="' + vid_w_s[i].token + '" title="Download">' +
                         '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
                         '</a>' +
                      '</td>' +
@@ -136,7 +136,7 @@ $(function () {
                         '<span class="d-block">' + audio[i].filesize + '</span>' +
                      '</td>' +
                      '<td class="align-middle">' +
-                        '<a class="btn mb-0" href="' + audio[i].video_url + '" title="Download">' +
+                        '<a class="btn mb-0" href="' + audio[i].token + '" title="Download">' +
                         '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
                         '</a>' +
                      '</td>' +

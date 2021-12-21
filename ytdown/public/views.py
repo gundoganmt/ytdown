@@ -1,12 +1,15 @@
 from flask import render_template, Blueprint, request, jsonify, Response, abort
 from flask_login import current_user
-import youtube_dl, requests, timeit, datetime, json
+import youtube_dl, requests, timeit, json, uuid
+from ytdown.models import Video, Resolutions
+from datetime import datetime, timedelta
+from ytdown import db
 
 public = Blueprint('public',__name__)
 
 def get_size(url):
     #head = requests.head(url)
-    return 255 #float(int(head.headers['Content-Length'])/1024/1024)
+    return 255 #convertFileSize(int(head.headers['Content-Length']))
 
 def convertFileSize(num):
     if not num:
@@ -27,32 +30,46 @@ def youtube(meta):
     video_without_sound = []
     audio_streams = []
 
-    duration = str(datetime.timedelta(seconds=meta['duration']))
+    duration = str(timedelta(seconds=meta['duration']))
     thumbnail = meta['thumbnail']
     title = meta['title']
+
+    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
+        download_date=datetime.utcnow(), source='Youtube')
+    db.session.add(video)
+    db.session.commit()
+
     for m in meta['formats']:
+        token = str(uuid.uuid4())
         if m['acodec'] != 'none' and m['vcodec'] != 'none':
             video_streams.append({
                 'resolution': m['format_note'],
                 'filesize': convertFileSize(m['filesize']),
                 'ext': m['ext'],
-                'video_url': m['url']
+                'token': token
             })
+            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            db.session.add(resolution)
         elif m['acodec'] == 'none' and m['vcodec'] != 'none':
             video_without_sound.append({
                 'resolution': m['format_note'],
                 'filesize': convertFileSize(m['filesize']),
                 'ext': m['ext'],
-                'video_url': m['url']
+                'token': token
             })
+            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            db.session.add(resolution)
         elif m['acodec'] != 'none' and m['vcodec'] == 'none':
             audio_streams.append({
                 'resolution': 'audio',
                 'filesize': convertFileSize(m['filesize']),
                 'ext': m['ext'],
-                'video_url': m['url']
+                'token': token
             })
+            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            db.session.add(resolution)
 
+    db.session.commit()
     context = {
         'error': False,
         'duration': 'Duration ' + duration,
@@ -67,17 +84,27 @@ def youtube(meta):
 def izlesene(meta):
     video_streams = []
 
-    duration = str(datetime.timedelta(seconds=meta['duration']))
+    duration = str(timedelta(seconds=meta['duration']))
     thumbnail = meta['thumbnail']
     title = meta['title']
+
+    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
+        download_date=datetime.utcnow(), source='Izlesene')
+    db.session.add(video)
+    db.session.commit()
+
     for m in meta['formats']:
+        token = str(uuid.uuid4())
         video_streams.append({
             'resolution': m['format_id'],
             'filesize': 255, #get_size(m['url']),
             'ext': m['ext'],
-            'video_url': m['url']
+            'token': token
         })
+        resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+        db.session.add(resolution)
 
+    db.session.commit()
     context = {
         'error': False,
         'duration': 'Duration ' + duration,
@@ -104,7 +131,7 @@ def extractor():
         # except:
         #     pass
 
-        with open('C:/Users/Mehmet/Desktop/ytdown/izlesene.json') as f:
+        with open('C:/Users/Mehmet/Desktop/ytdown/izlesene2.json') as f:
             meta = json.load(f)
 
         if meta['extractor'] == 'youtube':
@@ -114,7 +141,10 @@ def extractor():
 
 @public.route('/download')
 def download():
-    r = requests.get("", stream=True)
+    token = request.args.get('token', type=str)
+    res = Resolutions.query.filter_by(token=token).first_or_404()
+
+    r = requests.get(res.download_url, stream=True)
     headers = {
         'Content-Disposition': 'attachment; ' 'filename=trial.mp4',
         'Content-Length': r.headers['Content-Length']

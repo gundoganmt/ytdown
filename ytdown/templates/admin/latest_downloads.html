@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <!-- Primary Meta Tags -->
+      <title>
+         Flask Volt Pro -  Data Tables  | AppSeed
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Favicon -->
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Volt CSS -->
+      <link type="text/css" href="/static/admin/css/main.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Specific Page CSS goes HERE  -->
+   </head>
+   <body>
+      {% include 'admin/_sidebar.html' %}
+      <main class="content">
+         {% include 'admin/_header.html' %}
+         <div class="py-4">
+            <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+               <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                  <li class="breadcrumb-item">
+                     <a href="#">
+                        <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="breadcrumb-item"><a href="#">Volt</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">DataTables</li>
+               </ol>
+            </nav>
+            <div class="d-flex justify-content-between w-100 flex-wrap">
+               <div class="mb-3 mb-lg-0">
+                  <h1 class="h4">Latest Downloads</h1>
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="table-responsive py-4">
+               <table class="table table-flush" id="datatable">
+                  <thead class="thead-light">
+                     <tr>
+                        <th>Source</th>
+                        <th>Thumbnail</th>
+                        <th>Url</th>
+                        <th>Download Date</th>
+                        <th>Start date</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                    {% for vid in down_vids %}
+                      <tr>
+                          <td class="ver-middle"><span class="fw-normal">{{ vid.source }}</span></td>
+                          <td class="ver-middle">
+                              <a href="#" class="d-flex align-items-center">
+                                <img src="{{ vid.thumbnail }}" class="thumbnail rounded-circle-thumb me-3" alt="thumbnail">
+                                  <div class="d-block">
+                                      <span class="fw-bold">Michael Hopkins</span>
+                                      <div class="small text-gray">info@example.com</div>
+                                  </div>
+                              </a>
+                          </td>
+                          <td class="ver-middle">
+                            <p class="text-xs font-weight-bold mb-0"></p>
+                              <div class="form-group">
+                                <a href="{{ vid.web_url }}" target="_blank" class="input-group">
+                                  <input type="text" value="{{ vid.web_url }}" class="form-control cursor-pointer" readonly="">
+                                  <span class="input-group-text"><i class="fas fa-external-link-alt"></i></span>
+                                </a>
+                              </div>
+                          </td>
+                          <td class="ver-middle">
+                              <span class="fw-normal d-flex align-items-center">
+                                  {{ vid.download_date.strftime("%d %b, %Y") }}
+                              </span>
+                          </td>
+                          <td class="ver-middle">
+                              <div class="btn-group">
+                                  <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                                      <span class="visually-hidden">Toggle Dropdown</span>
+                                  </button>
+                                  <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
+                                      <a class="dropdown-item d-flex align-items-center" href="#">
+                                          <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd"></path></svg>
+                                          Reset Pass
+                                      </a>
+                                      <a class="dropdown-item d-flex align-items-center" href="#">
+                                          <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                                          View Details
+                                      </a>
+                                      <a class="dropdown-item d-flex align-items-center" href="#">
+                                          <svg class="dropdown-icon text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 6a3 3 0 11-6 0 3 3 0 016 0zM14 17a6 6 0 00-12 0h12zM13 8a1 1 0 100 2h4a1 1 0 100-2h-4z"></path></svg>
+                                          Suspend
+                                      </a>
+                                  </div>
+                              </div>
+                              <svg class="icon icon-xs text-danger ms-1" title="" data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-bs-original-title="Delete" aria-label="Delete"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                          </td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </main>
+      <!-- Core Libs -->
+      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/simple-datatables/dist/umd/simple-datatables.js"></script>
+      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+      <script type="text/javascript">
+      var dataTableEl = document.getElementById('datatable');
+      if (dataTableEl) {
+          const dataTable = new simpleDatatables.DataTable(dataTableEl);
+      }
+      </script>
+
+      <script type="text/javascript">
+      const d = document;
+      const breakpoints = {
+          sm: 540,
+          md: 720,
+          lg: 960,
+          xl: 1140
+      };
+      var sidebar = document.getElementById('sidebarMenu');
+      var content = document.getElementsByClassName('content')[0];
+      if (sidebar && d.body.clientWidth < breakpoints.lg) {
+          sidebar.addEventListener('shown.bs.collapse', function() {
+              document.querySelector('body').style.position = 'fixed';
+          });
+          sidebar.addEventListener('hidden.bs.collapse', function() {
+              document.querySelector('body').style.position = 'relative';
+          });
+      }
+
+      if (sidebar) {
+          if (localStorage.getItem('sidebar') === 'contracted') {
+              sidebar.classList.add('notransition');
+              content.classList.add('notransition');
+
+              sidebar.classList.add('contracted');
+
+              setTimeout(function() {
+                  sidebar.classList.remove('notransition');
+                  content.classList.remove('notransition');
+              }, 500);
+
+          } else {
+              sidebar.classList.add('notransition');
+              content.classList.add('notransition');
+
+              sidebar.classList.remove('contracted');
+
+              setTimeout(function() {
+                  sidebar.classList.remove('notransition');
+                  content.classList.remove('notransition');
+              }, 500);
+          }
+
+          var sidebarToggle = d.getElementById('sidebar-toggle');
+          sidebarToggle.addEventListener('click', function() {
+              if (sidebar.classList.contains('contracted')) {
+                  sidebar.classList.remove('contracted');
+                  localStorage.removeItem('sidebar', 'contracted');
+              } else {
+                  sidebar.classList.add('contracted');
+                  localStorage.setItem('sidebar', 'contracted');
+              }
+          });
+
+          sidebar.addEventListener('mouseenter', function() {
+              if (localStorage.getItem('sidebar') === 'contracted') {
+                  if (sidebar.classList.contains('contracted')) {
+                      sidebar.classList.remove('contracted');
+                  } else {
+                      sidebar.classList.add('contracted');
+                  }
+              }
+          });
+
+          sidebar.addEventListener('mouseleave', function() {
+              if (localStorage.getItem('sidebar') === 'contracted') {
+                  if (sidebar.classList.contains('contracted')) {
+                      sidebar.classList.remove('contracted');
+                  } else {
+                      sidebar.classList.add('contracted');
+                  }
+              }
+          });
+      }
+      </script>
+   </body>
+</html>

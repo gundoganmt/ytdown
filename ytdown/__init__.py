@@ -14,7 +14,7 @@ login_manager.login_message = "Please login to see this page"
 
 @login_manager.user_loader
 def load_user(id):
-    return Users.query.get(int(id))
+    return Admin.query.get(int(id))
 
 def create_app(config_class=Config):
     app = Flask(__name__)
