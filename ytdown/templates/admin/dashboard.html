@@ -6,6 +6,7 @@
       <title>Dashboard</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link type="text/css" href="/static/admin/css/main.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    </head>
    <body>
 
@@ -24,21 +25,25 @@
                   <div class="card-body">
                      <div class="row d-block d-xl-flex align-items-center">
                         <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
-                           <div class="icon icon-shape icon-md icon-shape-blue rounded mr-4 mr-sm-0"><span class="fas fa-chart-line"></span></div>
+                           <div class="icon icon-shape icon-md icon-shape-blue rounded mr-4 mr-sm-0" style="margin-right: 1.5rem;"><span class="fa fa-download"></span></div>
                            <div class="d-sm-none">
                               <h2 class="h5">Today</h2>
-                              <h3 class="mb-1">345,678</h3>
+                              <h3 class="mb-1">{{total_today}}</h3>
                            </div>
                         </div>
                         <div class="col-12 col-xl-7 px-xl-0">
                            <div class="d-none d-sm-block">
-                              <h2 class="h5">Customers</h2>
-                              <h3 class="mb-1">345k</h3>
+                              <h2 class="h5">Today</h2>
+                              <h3 class="mb-1">{{total_today}}</h3>
                            </div>
-                           <small>Feb 1 - Apr 1,  <span class="icon icon-small"><span class="fas fa-globe-europe"></span></span> WorldWide</small>
                            <div class="small mt-2">
-                              <span class="fas fa-angle-up text-success"></span>
-                              <span class="text-success font-weight-bold">18.2%</span> Since last month
+                             {% if rate_today >= 0 %}
+                               <span class="fas fa-angle-up text-success"></span>
+                               <span class="text-success font-weight-bold">{{rate_today}}%</span> Since Yesterday
+                             {% else %}
+                               <span class="fas fa-angle-up text-danger"></span>
+                               <span class="text-danger font-weight-bold">{{rate_today}}%</span> Since Yesterday
+                             {% endif %}
                            </div>
                         </div>
                      </div>
@@ -50,21 +55,25 @@
                   <div class="card-body">
                      <div class="row d-block d-xl-flex align-items-center">
                         <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
-                           <div class="icon icon-shape icon-md icon-shape-blue rounded mr-4 mr-sm-0"><span class="fas fa-chart-line"></span></div>
+                           <div class="icon icon-shape icon-md icon-shape-blue rounded mr-4 mr-sm-0" style="margin-right: 1.5rem;"><span class="fa fa-download"></span></div>
                            <div class="d-sm-none">
-                              <h2 class="h5">Customers</h2>
-                              <h3 class="mb-1">345,678</h3>
+                              <h2 class="h5">This Week</h2>
+                              <h3 class="mb-1">{{week_new_vid}}</h3>
                            </div>
                         </div>
                         <div class="col-12 col-xl-7 px-xl-0">
                            <div class="d-none d-sm-block">
-                              <h2 class="h5">Customers</h2>
-                              <h3 class="mb-1">345k</h3>
+                              <h2 class="h5">This Week</h2>
+                              <h3 class="mb-1">{{week_new_vid}}</h3>
                            </div>
-                           <small>Feb 1 - Apr 1,  <span class="icon icon-small"><span class="fas fa-globe-europe"></span></span> WorldWide</small>
                            <div class="small mt-2">
-                              <span class="fas fa-angle-up text-success"></span>
-                              <span class="text-success font-weight-bold">18.2%</span> Since last month
+                             {% if rate_week >= 0 %}
+                               <span class="fas fa-angle-up text-success"></span>
+                               <span class="text-success font-weight-bold">{{rate_week}}%</span> Since last Week
+                             {% else %}
+                               <span class="fas fa-angle-up text-danger"></span>
+                               <span class="text-danger font-weight-bold">{{rate_week}}%</span> Since last Week
+                             {% endif %}
                            </div>
                         </div>
                      </div>
@@ -76,21 +85,25 @@
                   <div class="card-body">
                      <div class="row d-block d-xl-flex align-items-center">
                         <div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">
-                           <div class="icon icon-shape icon-md icon-shape-blue rounded mr-4 mr-sm-0"><span class="fas fa-chart-line"></span></div>
+                           <div class="icon icon-shape icon-md icon-shape-blue rounded mr-4 mr-sm-0" style="margin-right: 1.5rem;"><span class="fa fa-download"></span></div>
                            <div class="d-sm-none">
-                              <h2 class="h5">Customers</h2>
-                              <h3 class="mb-1">345,678</h3>
+                              <h2 class="h5">This Month</h2>
+                              <h3 class="mb-1">{{total_new_vid}}</h3>
                            </div>
                         </div>
                         <div class="col-12 col-xl-7 px-xl-0">
                            <div class="d-none d-sm-block">
-                              <h2 class="h5">Customers</h2>
-                              <h3 class="mb-1">345k</h3>
+                              <h2 class="h5">This Month</h2>
+                              <h3 class="mb-1">{{total_new_vid}}</h3>
                            </div>
-                           <small>Feb 1 - Apr 1,  <span class="icon icon-small"><span class="fas fa-globe-europe"></span></span> WorldWide</small>
                            <div class="small mt-2">
-                              <span class="fas fa-angle-up text-success"></span>
-                              <span class="text-success font-weight-bold">18.2%</span> Since last month
+                             {% if rate_month >= 0 %}
+                               <span class="fas fa-angle-up text-success"></span>
+                               <span class="text-success font-weight-bold">{{rate_month}}%</span> Since last month
+                             {% else %}
+                               <span class="fas fa-angle-up text-danger"></span>
+                               <span class="text-danger font-weight-bold">{{rate_month}}%</span> Since last month
+                             {% endif %}
                            </div>
                         </div>
                      </div>
@@ -195,14 +208,17 @@
         const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-        var beginning = new Date('{{f_dw}}')
-        var today = new Date()
-        var mDate = new Date(new Date().setDate(today.getDate()+30))
+        var beginning = new Date('{{f_dw}}');
+        var today = new Date();
+        var mDate = new Date(new Date().setDate(today.getDate()+3));
 
         var daysOfMonths = [];
         for (; beginning <= mDate; beginning.setDate(beginning.getDate() + 1)) {
             dateString = beginning.getDate() + ' ' + monthNames[beginning.getMonth()]
             daysOfMonths.push(dateString);
+            if (today > mDate){
+              mDate.setDate(mDate.getDate()+1);
+            }
         }
 
         var options = {

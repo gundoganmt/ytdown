@@ -18,7 +18,7 @@ class Video(db.Model):
     source = db.Column(db.String(50))
     web_url = db.Column(db.Text, nullable=False)
     thumbnail = db.Column(db.Text, nullable=True)
-    download_date = db.Column(db.DateTime)
+    dw_date = db.Column(db.String(50))
     res = db.relationship('Resolutions', backref='res', lazy='dynamic', cascade='all, delete-orphan')
 
     def __repr__(self):
@@ -30,3 +30,9 @@ class Resolutions(db.Model):
     download_url = db.Column(db.Text, nullable=False)
     token = db.Column(db.String(100), nullable=False)
     vid_id = db.Column(db.Integer, db.ForeignKey('Video.id'), nullable=False)
+
+class Faq(db.Model):
+    __tablename__ = 'Faq'
+    id = db.Column(db.Integer, primary_key=True)
+    faq_q = db.Column(db.String(250))
+    faq_ans = db.Column(db.Text)

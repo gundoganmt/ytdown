@@ -35,7 +35,7 @@ def youtube(meta):
     title = meta['title']
 
     video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
-        download_date=datetime.utcnow(), source='Youtube')
+        dw=datetime.today().strftime('%Y-%m-%d'), source='Youtube')
     db.session.add(video)
     db.session.commit()
 
@@ -89,7 +89,7 @@ def izlesene(meta):
     title = meta['title']
 
     video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
-        download_date=datetime.utcnow(), source='Izlesene')
+        dw_date=datetime.today().strftime('%Y-%m-%d'), source='Izlesene')
     db.session.add(video)
     db.session.commit()
 
