@@ -25,8 +25,18 @@ $(function () {
       for (var i = 1; i < tb_a.length; i++){
           tb_a[i].remove();
       }
+      $('#video_items').addClass('d-none');
       $('#vid_w_s_item').addClass('d-none');
       $('#audio_items').addClass('d-none');
+
+      $('#video-tab').removeClass('active');
+      $('#video').removeClass('active show');
+
+      $('#video-without-sound-tab').removeClass('active');
+      $('#video-without-sound').removeClass('active show');
+
+      $('#audio-tab').removeClass('active');
+      $('#audio').removeClass('active show');
     }
 
     // Progress bar
@@ -79,29 +89,38 @@ $(function () {
               $('.title').text(result.title);
               $('#duration').text(result.duration);
 
-              var videos = result.video_streams;
-              for(var i = 0; i < videos.length; i++){
-                $('#tbody_video').append('<tr>' +
-                   '<td class="align-middle py-4">' +
-                      '<span class="d-block">' +
-                      videos[i].resolution + '(.' + videos[i].ext + ')' +
-                      (videos[i].resolution == '1080p' || videos[i].resolution == '720p' ? '<span class="badge bg-gradient-danger">HD</span>': '') +
-                      '</span>' +
-                   '</td>' +
-                   '<td class="align-middle">' +
-                      '<span class="d-block">' + videos[i].filesize + '</span>' +
-                   '</td>' +
-                   '<td class="align-middle">' +
-                      '<a class="btn mb-0" href="' + videos[i].token + '" title="Download">' +
-                      '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
-                      '</a>' +
-                   '</td>' +
-                '</tr>');
+              if ('video_streams' in result && result.video_streams.length > 0){
+                var videos = result.video_streams;
+                $('#video_items').removeClass('d-none');
+                $('#video-tab').addClass('active');
+                $('#video').addClass('active show');
+                for(var i = 0; i < videos.length; i++){
+                  $('#tbody_video').append('<tr>' +
+                     '<td class="align-middle py-4">' +
+                        '<span class="d-block">' +
+                        videos[i].resolution + '(.' + videos[i].ext + ')' +
+                        (videos[i].resolution == '1080p' || videos[i].resolution == '720p' ? '<span class="badge bg-gradient-danger">HD</span>': '') +
+                        '</span>' +
+                     '</td>' +
+                     '<td class="align-middle">' +
+                        '<span class="d-block">' + videos[i].filesize + '</span>' +
+                     '</td>' +
+                     '<td class="align-middle">' +
+                        '<a class="btn mb-0" href="' + videos[i].token + '" title="Download">' +
+                        '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
+                        '</a>' +
+                     '</td>' +
+                  '</tr>');
+                }
               }
 
-              if ('video_without_sound' in result &&  result.video_without_sound.length > 0){
+              if ('video_without_sound' in result && result.video_without_sound.length > 0){
                 var vid_w_s = result.video_without_sound;
                 $('#vid_w_s_item').removeClass('d-none');
+                if ($('#video_items').hasClass('d-none')){
+                  $('#video-without-sound-tab').addClass('active');
+                  $('#video-without-sound').addClass('active show');
+                }
                 for(var i = 0; i < vid_w_s.length; i++){
                   $('#tbody_vid_w_s').append('<tr>' +
                      '<td class="align-middle py-4">' +
@@ -122,9 +141,13 @@ $(function () {
                 }
               }
 
-              if ('audio_streams' in result &&  result.audio_streams.length > 0){
+              if ('audio_streams' in result && result.audio_streams.length > 0){
                 var audio = result.audio_streams;
                 $('#audio_items').removeClass('d-none');
+                if ($('#vid_w_s_item').hasClass('d-none') && $('#video_items').hasClass('d-none')){
+                  $('#audio-tab').addClass('active');
+                  $('#audio').addClass('active show');
+                }
                 for(var i = 0; i < audio.length; i++){
                   $('#tbody_audio').append('<tr>' +
                      '<td class="align-middle py-4">' +

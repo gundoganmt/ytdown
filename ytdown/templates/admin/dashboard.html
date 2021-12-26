@@ -39,10 +39,10 @@
                            <div class="small mt-2">
                              {% if rate_today >= 0 %}
                                <span class="fas fa-angle-up text-success"></span>
-                               <span class="text-success font-weight-bold">{{rate_today}}%</span> Since Yesterday
+                               <span class="text-success font-weight-bold">{{'%0.2f'| format(rate_today|float)}}%</span> Since Yesterday
                              {% else %}
                                <span class="fas fa-angle-up text-danger"></span>
-                               <span class="text-danger font-weight-bold">{{rate_today}}%</span> Since Yesterday
+                               <span class="text-danger font-weight-bold">{{'%0.2f'| format(rate_today|float)}}%</span> Since Yesterday
                              {% endif %}
                            </div>
                         </div>
@@ -69,10 +69,10 @@
                            <div class="small mt-2">
                              {% if rate_week >= 0 %}
                                <span class="fas fa-angle-up text-success"></span>
-                               <span class="text-success font-weight-bold">{{rate_week}}%</span> Since last Week
+                               <span class="text-success font-weight-bold">{{'%0.2f'| format(rate_week|float)}}%</span> Since last Week
                              {% else %}
                                <span class="fas fa-angle-up text-danger"></span>
-                               <span class="text-danger font-weight-bold">{{rate_week}}%</span> Since last Week
+                               <span class="text-danger font-weight-bold">{{'%0.2f'| format(rate_week|float)}}%</span> Since last Week
                              {% endif %}
                            </div>
                         </div>
@@ -99,10 +99,10 @@
                            <div class="small mt-2">
                              {% if rate_month >= 0 %}
                                <span class="fas fa-angle-up text-success"></span>
-                               <span class="text-success font-weight-bold">{{rate_month}}%</span> Since last month
+                               <span class="text-success font-weight-bold">{{'%0.2f'| format(rate_month|float)}}%</span> Since last month
                              {% else %}
                                <span class="fas fa-angle-up text-danger"></span>
-                               <span class="text-danger font-weight-bold">{{rate_month}}%</span> Since last month
+                               <span class="text-danger font-weight-bold">{{'%0.2f'| format(rate_month|float)}}%</span> Since last month
                              {% endif %}
                            </div>
                         </div>
