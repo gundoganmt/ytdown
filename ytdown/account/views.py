@@ -14,6 +14,7 @@ def load_user(id):
     return Admin.query.get(int(id))
 
 @account.route('/dashboard')
+@login_required
 def dashboard():
     two_months = (datetime.today()-timedelta(60)).strftime('%Y-%m-%d')
     one_month = (datetime.today()-timedelta(30)).strftime('%Y-%m-%d')
@@ -79,6 +80,22 @@ def dashboard():
         if datetime.today() > month_later:
             month_later += delta
 
+    b = db.session.query(Video.source, func.count(Video.source)).group_by(Video.source).order_by(Video.source.desc()).all()
+    priority_source = ['Youtube', 'Twitter', 'Instagram', 'Vlive', 'Vimeo', 'SoundCloud', 'Izlesene']
+    i = 0
+    j = 0
+    source_data = []
+    while i <= 6:
+        while j <= 6:
+            if priority_source[i] == b[j][0]:
+                source_data.append(b[j][1])
+                break
+            j += 1
+        if j == 7:
+            source_data.append(0)
+        i += 1
+        j = 0
+
     context = {
         "data": data,
         "f_dw": f_dw,
@@ -86,39 +103,21 @@ def dashboard():
         "total_new_vid": total_new_vid.count(),
         "rate_week": rate_week,
         "rate_month": rate_month,
-        'total_today': total_today,
-        'rate_today': rate_today
+        "total_today": total_today,
+        "rate_today": rate_today,
+        "source_data": source_data
     }
 
     return render_template('admin/dashboard.html', **context)
 
 @account.route('/latest_downloads')
+@login_required
 def latest_downloads():
     down_vids = Video.query.all()
     return render_template('admin/latest_downloads.html', down_vids=down_vids)
 
-@account.route('/delete')
-def delete():
-    down_vids = Video.query.all()
-    for i in down_vids:
-        db.session.delete(i)
-    db.session.commit()
-    return "success"
-
-@account.route('/p')
-def p():
-    start_date = datetime.today() - timedelta(days=10)
-    today = datetime.today()
-
-    while start_date <= today:
-        for i in range(random.randint(0,10)):
-            v = Video(web_url="https://www.g.com", dw_date=start_date.strftime('%Y-%m-%d'))
-            db.session.add(v)
-        start_date += timedelta(days=1)
-    db.session.commit()
-    return "success"
-
 @account.route('/faq', methods=['GET', 'POST'])
+@login_required
 def faq():
     if request.method == 'POST':
         faq_q = request.form['faq_q']
@@ -134,11 +133,10 @@ def faq():
         all_faq = Faq.query.all()
         return render_template('admin/faq.html', all_faq=all_faq)
 
-
 @account.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('public.index'))
+        return redirect(url_for('account.dashboard'))
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']

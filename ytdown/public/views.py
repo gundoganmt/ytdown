@@ -297,17 +297,17 @@ def index():
 @public.route('/extractor', methods=['POST'])
 def extractor():
     if request.method == 'POST':
-        # url = request.form['inputValue']
-        # ydl_opts = {}
-        # try:
-        #     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-        #         meta = ydl.extract_info(url, download=False)
-        #     return jsonify(meta)
-        # except:
-        #     abort(404)
+        url = request.form['inputValue']
+        ydl_opts = {}
+        try:
+            with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+                meta = ydl.extract_info(url, download=False)
+            #return jsonify(meta)
+        except:
+            abort(404)
 
-        with open('C:/Users/Mehmet/Desktop/ytdown/vimeo.json') as f:
-            meta = json.load(f)
+        # with open('C:/Users/Mehmet/Desktop/ytdown/vimeo.json') as f:
+        #     meta = json.load(f)
 
         if meta['extractor'] == 'youtube':
             return youtube(meta)

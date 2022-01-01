@@ -106,7 +106,7 @@ $(function () {
                         '<span class="d-block">' + videos[i].filesize + '</span>' +
                      '</td>' +
                      '<td class="align-middle">' +
-                        '<a class="btn mb-0" href="' + videos[i].token + '" title="Download">' +
+                        '<a class="btn mb-0" href="/download?token=' + videos[i].token + '" title="Download">' +
                         '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
                         '</a>' +
                      '</td>' +

@@ -39,10 +39,10 @@
                            <div class="small mt-2">
                              {% if rate_today >= 0 %}
                                <span class="fas fa-angle-up text-success"></span>
-                               <span class="text-success font-weight-bold">{{'%0.2f'| format(rate_today|float)}}%</span> Since Yesterday
+                               <span class="text-success font-weight-bold">{{'%0.1f'| format(rate_today|float)}}%</span> Since Yesterday
                              {% else %}
                                <span class="fas fa-angle-up text-danger"></span>
-                               <span class="text-danger font-weight-bold">{{'%0.2f'| format(rate_today|float)}}%</span> Since Yesterday
+                               <span class="text-danger font-weight-bold">{{'%0.1f'| format(rate_today|float)}}%</span> Since Yesterday
                              {% endif %}
                            </div>
                         </div>
@@ -69,10 +69,10 @@
                            <div class="small mt-2">
                              {% if rate_week >= 0 %}
                                <span class="fas fa-angle-up text-success"></span>
-                               <span class="text-success font-weight-bold">{{'%0.2f'| format(rate_week|float)}}%</span> Since last Week
+                               <span class="text-success font-weight-bold">{{'%0.1f'| format(rate_week|float)}}%</span> Since last Week
                              {% else %}
                                <span class="fas fa-angle-up text-danger"></span>
-                               <span class="text-danger font-weight-bold">{{'%0.2f'| format(rate_week|float)}}%</span> Since last Week
+                               <span class="text-danger font-weight-bold">{{'%0.1f'| format(rate_week|float)}}%</span> Since last Week
                              {% endif %}
                            </div>
                         </div>
@@ -99,10 +99,10 @@
                            <div class="small mt-2">
                              {% if rate_month >= 0 %}
                                <span class="fas fa-angle-up text-success"></span>
-                               <span class="text-success font-weight-bold">{{'%0.2f'| format(rate_month|float)}}%</span> Since last month
+                               <span class="text-success font-weight-bold">{{'%0.1f'| format(rate_month|float)}}%</span> Since last month
                              {% else %}
                                <span class="fas fa-angle-up text-danger"></span>
-                               <span class="text-danger font-weight-bold">{{'%0.2f'| format(rate_month|float)}}%</span> Since last month
+                               <span class="text-danger font-weight-bold">{{'%0.1f'| format(rate_month|float)}}%</span> Since last month
                              {% endif %}
                            </div>
                         </div>
@@ -176,33 +176,8 @@
             </div>
          </div>
       </main>
-      <!-- Core Libs -->
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/@popperjs/core/dist/umd/popper.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-      <!-- Plugins -->
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/onscreen/dist/on-screen.umd.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/nouislider/distribute/nouislider.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/countup.js/dist/countUp.umd.js"></script>
       <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/apexcharts/dist/apexcharts.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/simple-datatables/dist/umd/simple-datatables.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/fullcalendar/main.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/dropzone/dist/min/dropzone.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/notyf/notyf.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/leaflet/dist/leaflet.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/svg-pan-zoom/dist/svg-pan-zoom.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/svgmap/dist/svgMap.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/simplebar/dist/simplebar.min.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/sortablejs/Sortable.min.js"></script>
-      <script async defer src="https://buttons.github.io/buttons.js"></script>
       <!-- Volt JS -->
-      <script src="/static/admin/js/main.js"></script>
-      <!-- Specific Page JS goes HERE  -->
 
       <script type="text/javascript">
         const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -325,6 +300,95 @@
         var chart = new ApexCharts(document.querySelector("#chart"), options);
         if (document.getElementById('chart')) {
             chart.render();
+        }
+
+        // Total Orders Chart
+        var optionsAppRankingChart = {
+            series: [{
+                name: 'Travel & Local',
+                data: {{source_data}}
+            }],
+            chart: {
+                type: 'bar',
+                height: '400px',
+                fontFamily: 'Inter',
+                foreColor: '#4B5563',
+            },
+            colors: ['#f0bc74', '#31316A'],
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '40%',
+                    borderRadius: 10,
+                    colors: {
+                        backgroundBarColors: ['#fff'],
+                        backgroundBarOpacity: .2,
+                        backgroundBarRadius: 10,
+                    },
+                },
+            },
+            grid: {
+                show: false,
+            },
+            dataLabels: {
+                enabled: false
+            },
+            legend: {
+                show: true,
+                fontSize: '14px',
+                fontFamily: 'Inter',
+                fontWeight: 500,
+                height: 40,
+                tooltipHoverFormatter: undefined,
+                offsetY: 10,
+                markers: {
+                    width: 14,
+                    height: 14,
+                    strokeWidth: 1,
+                    strokeColor: '#ffffff',
+                    radius: 50,
+                },
+            },
+            stroke: {
+                show: true,
+                width: 2,
+                colors: ['transparent']
+            },
+            xaxis: {
+                categories: ['Youtube', 'Twitter', 'Instagram', 'Vlive', 'Vimeo', 'SoundCloud', 'Izlesene'],
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontWeight: 500,
+                    },
+                },
+                axisBorder: {
+                    color: '#EBE3EE',
+                },
+                axisTicks: {
+                    color: '#f1f1f1',
+                }
+            },
+            yaxis: {
+                show: false,
+            },
+            fill: {
+                opacity: 1
+            },
+            responsive: [{
+                breakpoint: 1499,
+                options: {
+                    chart: {
+                        height: '400px',
+                    },
+                },
+            }]
+        };
+
+        var appRankingChartEl = document.getElementById('chart-app-ranking');
+        if (appRankingChartEl) {
+            var appRankingChart = new ApexCharts(appRankingChartEl, optionsAppRankingChart);
+            appRankingChart.render();
         }
 
       </script>
