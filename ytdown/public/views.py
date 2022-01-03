@@ -298,11 +298,14 @@ def index():
 def extractor():
     if request.method == 'POST':
         url = request.form['inputValue']
-        ydl_opts = {}
+        ydl_opts = {
+            'username': 'ertugrul.bey.96592',
+            'password': '26893810120'
+        }
         try:
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 meta = ydl.extract_info(url, download=False)
-            #return jsonify(meta)
+            return jsonify(meta)
         except:
             abort(404)
 

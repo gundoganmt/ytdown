@@ -1,13 +1,16 @@
 from flask import render_template, request, Blueprint, redirect, url_for, flash, abort
 from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.utils import secure_filename
 from ytdown.models import Admin, Video, Faq
 from datetime import datetime, timedelta
 from ytdown import db, login_manager
 from flask_login import login_user, logout_user, login_required, current_user
-import calendar, random
+import calendar, random, uuid, os
 from sqlalchemy import func
 
 account = Blueprint('account',__name__)
+
+UPLOAD_PROFILE_FOLDER = os.path.join(os.getcwd(), 'ytdown/static/images')
 
 @login_manager.user_loader
 def load_user(id):
@@ -113,7 +116,7 @@ def dashboard():
 @account.route('/latest_downloads')
 @login_required
 def latest_downloads():
-    down_vids = Video.query.all()
+    down_vids = db.session.query(Video).order_by(Video.dw_date.desc()).all()
     return render_template('admin/latest_downloads.html', down_vids=down_vids)
 
 @account.route('/faq', methods=['GET', 'POST'])
@@ -132,6 +135,44 @@ def faq():
     else:
         all_faq = Faq.query.all()
         return render_template('admin/faq.html', all_faq=all_faq)
+
+@account.route('/manage_admins', methods=['GET', 'POST'])
+@login_required
+def manageadmins():
+    if request.method == 'GET':
+        admins = Admin.query.all()
+        return render_template('admin/manage_admins.html', admins=admins)
+    else:
+        username = request.form['username']
+        email = request.form['email']
+        full_name = request.form['full_name']
+        password = request.form['password']
+
+        if Admin.query.filter_by(username=username).first():
+            flash("This username allready being used!")
+            return redirect(url_for('.manageadmins'))
+
+        if Admin.query.filter_by(email=email).first():
+            flash("This email allready being used!")
+            return redirect(url_for('.manageadmins'))
+
+        adm = Admin(username=username, email=email, full_name=full_name, password=password)
+
+        if 'file' in request.files:
+            file = request.files['file']
+            filename = secure_filename(file.filename)
+            unique_filename = str(uuid.uuid4())+get_extension(filename)
+            adm.profile_picture = unique_filename
+            file.save(os.path.join(UPLOAD_PROFILE_FOLDER, unique_filename))
+
+        db.session.add(adm)
+        db.session.commit()
+        return redirect(url_for('.manageadmins'))
+
+@account.route('/supported_sites', methods=['GET', 'POST'])
+@login_required
+def supported_sites():
+    return render_template('admin/supported_sites.html')
 
 @account.route('/login', methods=['GET', 'POST'])
 def login():
@@ -158,3 +199,6 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('public.index'))
+
+def get_extension(filename):
+    return '.'+ filename.rsplit('.', 1)[1].lower()

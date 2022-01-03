@@ -174,7 +174,6 @@ $(function () {
               }, 750);
             }
             else{
-              console.log('error')
               $('.alert').addClass('d-block');
             }
           }
