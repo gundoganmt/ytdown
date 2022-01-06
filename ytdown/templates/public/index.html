@@ -4,27 +4,75 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="descriptison" content="Download Facebook videos online and save them to your PC or Phone. Our Facebook video downloader lets you save videos in high quality MP4 format online and for free.">
-      <title>Facebook Video Downloader - Download Facebook Videos Online</title>
+      <meta name="description" content="Download videos from social media online and save them to your PC or Phone. Our video downloader lets you save videos in high quality MP4 format online and for free.">
+      <title>Video Downloader - Download Videos From Social Media Online</title>
       <meta name="msapplication-TileColor" content="#b91d47">
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/trial.css')}}" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/public.css')}}" />
       <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" />
    </head>
    <body class="toggle-loading preload home">
       <div id="top" class="prevent-click d-lg-none"></div>
       <nav class="navbar navbar-expand-md ">
-         <div class="container">
-            <a class="navbar-brand" title="Facebook Video Downloader" href="/">indir1</a>
-         </div>
+        <div class="container">
+       <a class="navbar-brand" title="Facebook Video Downloader" href="/">indir1.net</a>
+       <button class="toggle-button d-lg-none" type="button" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="fa fa-bars"></span>
+       </button>
+
+       <div class="justify-content-lg-end d-none d-lg-block" id="navbarsExampleDefault">
+           <ul class="navbar-nav me-auto mb-2 mb-md-0">
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Downloaders<span class="fa fa-chevron-down"></span></a>
+                   <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                       <li><a title="Youtube Downloader" class="dropdown-item {% if dw=='youtube' %}checked{% endif %}" href="{{url_for('public.index', downloader='youtube')}}"><span class="fa fa-check"></span> Youtube Downloader</a></li>
+                       <li><a title="Twitter Downloader" class="dropdown-item {% if dw=='twitter' %}checked{% endif %}" href="{{url_for('public.index', downloader='twitter')}}"><span class="fa fa-check"></span> Twitter Downloader</a></li>
+                       <li><a title="Instagram Downloader" class="dropdown-item {% if dw=='instagram' %}checked{% endif %}" href="{{url_for('public.index', downloader='instagram')}}"><span class="fa fa-check"></span> Instagram Downloader</a></li>
+                       <li><a title="Vlive Downloader" class="dropdown-item {% if dw=='vlive' %}checked{% endif %}" href="{{url_for('public.index', downloader='vlive')}}"><span class="fa fa-check"></span> Vlive Downloader</a></li>
+                       <li><a title="Vimeo Downloader" class="dropdown-item {% if dw=='vimeo' %}checked{% endif %}" href="{{url_for('public.index', downloader='vimeo')}}"><span class="fa fa-check"></span> Vimeo Downloader</a></li>
+                       <li><a title="SoundCloud Downloader" class="dropdown-item {% if dw=='soundcloud' %}checked{% endif %}" href="{{url_for('public.index', downloader='soundcloud')}}"><span class="fa fa-check"></span> SoundCloud Downloader</a></li>
+                       <li><a title="Izlesene Downloader" class="dropdown-item {% if dw=='izlesene' %}checked{% endif %}" href="{{url_for('public.index', downloader='izlesene')}}"><span class="fa fa-check"></span> Izlesene Downloader</a></li>
+                   </ul>
+               </li>
+           </ul>
+       </div>
+
+       <div class="nav-mobile d-lg-none">
+           <ul class="nav-mobile-menu list-unstyled">
+             <li><a title="Youtube Downloader" class="dropdown-item {% if dw=='youtube' %}checked{% endif %}" href="{{url_for('public.index', downloader='youtube')}}"><span class="fa fa-check"></span> Youtube Downloader</a></li>
+             <li><a title="Twitter Downloader" class="dropdown-item {% if dw=='twitter' %}checked{% endif %}" href="{{url_for('public.index', downloader='twitter')}}"><span class="fa fa-check"></span> Twitter Downloader</a></li>
+             <li><a title="Instagram Downloader" class="dropdown-item {% if dw=='instagram' %}checked{% endif %}" href="{{url_for('public.index', downloader='instagram')}}"><span class="fa fa-check"></span> Instagram Downloader</a></li>
+             <li><a title="Vlive Downloader" class="dropdown-item {% if dw=='vlive' %}checked{% endif %}" href="{{url_for('public.index', downloader='vlive')}}"><span class="fa fa-check"></span> Vlive Downloader</a></li>
+             <li><a title="Vimeo Downloader" class="dropdown-item {% if dw=='vimeo' %}checked{% endif %}" href="{{url_for('public.index', downloader='vimeo')}}"><span class="fa fa-check"></span> Vimeo Downloader</a></li>
+             <li><a title="SoundCloud Downloader" class="dropdown-item {% if dw=='soundcloud' %}checked{% endif %}" href="{{url_for('public.index', downloader='soundcloud')}}"><span class="fa fa-check"></span> SoundCloud Downloader</a></li>
+             <li><a title="Izlesene Downloader" class="dropdown-item {% if dw=='izlesene' %}checked{% endif %}" href="{{url_for('public.index', downloader='izlesene')}}"><span class="fa fa-check"></span> Izlesene Downloader</a></li>
+           </ul>
+       </div>
+   </div>
       </nav>
       <section class="hero-container bb bt pb-5">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="hero text-center mt-md-5  py-5 px-3">
-                     <h1>Facebook <span class='blue'>Video</span> Downloader</h1>
-                     <p class="lead mt-3 mt-lg-5">Facebook Downloader is a fast and free way to download and save Facebook videos as MP4's. </br> Start by putting the Facebook video URL in the box below and click Go.</p>
+                    {% if dw == 'youtube' %}
+                      <h1>Youtube <span class='blue'>Video</span> Downloader</h1>
+                    {% elif dw == 'twitter' %}
+                      <h1>Twitter <span class='blue'>Video</span> Downloader</h1>
+                    {% elif dw == 'instagram' %}
+                      <h1>Instagram <span class='blue'>Video</span> Downloader</h1>
+                    {% elif dw == 'vlive' %}
+                      <h1>Vlive <span class='blue'>Video</span> Downloader</h1>
+                    {% elif dw == 'vimeo' %}
+                      <h1>Vimeo <span class='blue'>Video</span> Downloader</h1>
+                    {% elif dw == 'soundcloud' %}
+                      <h1>SoundCloud <span class='blue'>Video</span> Downloader</h1>
+                    {% elif dw == 'izlesene' %}
+                      <h1>Izlesene <span class='blue'>Video</span> Downloader</h1>
+                    {% else %}
+                      <h1><span class='blue'>Video</span> Downloader</h1>
+                    {% endif %}
+                     <p class="lead mt-3 mt-lg-5">indir1.net downloader is a fast and free way to download and save social media videos as MP4's. </br> Start by putting the video URL in the box below and click Go.</p>
                   </div>
                   <p class="alert alert-yellow text-center col-lg-12 col-xl-10 p-4 ml-auto mr-auto mb-5">There was an issue generating the download links for this video. Please check the URL and try again</p>
                   <div class="row">
@@ -36,9 +84,25 @@
                      <div class="search-input col-lg-12 col-xl-10 mb-lg-5 m-auto" >
                         <form id="video-form" class="form-inline text-center  mb-0">
                            <div class="input-group w-lg-100 w-80 mb-3 mb-lg-0 position-relative">
-                              <input type="text" name="url" class="form-control video-link" onclick="this.setSelectionRange(0, this.value.length)" placeholder="Paste Facebook video URL..." required="">
+                              <input type="text" name="url" class="form-control video-link" onclick="this.setSelectionRange(0, this.value.length)" placeholder="Paste video URL..." required="">
                               <input type="hidden" id="csrf_token" value="{{csrf_token()}}">
-                              <span class="facebook-icon fab blue fa-facebook-square position-absolute"></span>
+                              {% if dw == 'youtube' %}
+                              <span class="social-icon fab blue fa-youtube position-absolute"></span>
+                              {% elif dw == 'twitter' %}
+                              <span class="social-icon fab blue fa-twitter position-absolute"></span>
+                              {% elif dw == 'instagram' %}
+                              <span class="social-icon fab blue fa-instagram position-absolute"></span>
+                              {% elif dw == 'vlive' %}
+                              <span class="social-icon fab blue fa-video position-absolute"></span>
+                              {% elif dw == 'vimeo' %}
+                              <span class="social-icon fab blue fa-vimeo position-absolute"></span>
+                              {% elif dw == 'soundcloud' %}
+                              <span class="social-icon fab blue fa-soundcloud position-absolute"></span>
+                              {% elif dw == 'izlesene' %}
+                              <span class="social-icon fab blue fa-video position-absolute"></span>
+                              {% else %}
+                              <span class="social-icon fab blue fa-youtube position-absolute"></span>
+                              {% endif %}
                            </div>
                            <button type="submit" class="btn btn-submit btn-primary btn-form ml-lg-3">Go</button>
                         </form>
@@ -160,24 +224,24 @@
          <div class="container">
             <div class="row">
                <div class="section-intro col-md-12">
-                  <h2>How to save Facebook videos</h2>
+                  <h2>How to save videos</h2>
                   <div class="divider"></div>
-                  <p>Download your favorite Facebook videos by following the three simple steps below.</p>
+                  <p>Download your favorite videos by following the three simple steps below.</p>
                </div>
                <div class="col-lg-4">
                   <span class="fa fa-video"></span>
                   <h3>1. Find The Video</h3>
-                  <p>Copy the Facebook video URL by right clicking the video and selecting copy.</p>
+                  <p>Copy the video URL by right clicking the video and selecting copy.</p>
                </div>
                <div class="col-lg-4">
                   <span class="fa fa-video"></span>
                   <h3>2. Paste The Video</h3>
-                  <p>Paste the Facebook link into the input field above and hit the Go button.</p>
+                  <p>Paste the link into the input field above and hit the Go button.</p>
                </div>
                <div class="col-lg-4">
                   <span class="fa fa-video"></span>
                   <h3>3. Download The File</h3>
-                  <p>Right click on the video file you would like to download and click Save As.</p>
+                  <p>Click on the video file you would like to download. Thats it.</p>
                </div>
             </div>
          </div>
@@ -277,10 +341,10 @@
       <i class="fas fa-angle-up"></i>
       </a>
       <!-- Load the javascript! -->
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
       <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
       <script src="{{ url_for('static', filename='js/public.js')}}"></script>
-      <script src="{{ url_for('static', filename='js/trial.js')}}"></script>
+      <script src="{{ url_for('static', filename='js/downloader.js')}}"></script>
 
    </body>
 </html>

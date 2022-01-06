@@ -45,7 +45,7 @@
             </a>
          </li>
 
-         <li class="nav-item active">
+         <li class="nav-item {{dash_active}}">
             <a href="/dashboard" class="nav-link d-flex align-items-center justify-content-between">
                <span>
                   <span class="sidebar-icon">
@@ -58,7 +58,7 @@
                </span>
             </a>
          </li>
-         <li class="nav-item ">
+         <li class="nav-item {{latest}}">
             <a href="/latest_downloads" class="nav-link d-flex align-items-center justify-content-between">
                <span>
                   <span class="sidebar-icon">
@@ -69,10 +69,9 @@
                   </span>
                   <span class="sidebar-text">Latest Downloads</span>
                </span>
-               <span class="badge badge-sm bg-danger badge-pill notification-count">4</span>
             </a>
          </li>
-         <li class="nav-item ">
+         <li class="nav-item {{faq_active}}">
             <a href="/faq" class="nav-link">
                <span class="sidebar-icon">
                   <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

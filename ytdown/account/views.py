@@ -63,7 +63,7 @@ def dashboard():
         start_date = datetime.today()
         f_dw = start_date.strftime('%Y-%m-%d')
 
-    month_later = start_date + timedelta(days=3)
+    month_later = start_date + timedelta(days=30)
 
     a = db.session.query(Video.dw_date, func.count(Video.dw_date)).group_by(Video.dw_date).order_by(Video.dw_date).all()
 
@@ -108,7 +108,8 @@ def dashboard():
         "rate_month": rate_month,
         "total_today": total_today,
         "rate_today": rate_today,
-        "source_data": source_data
+        "source_data": source_data,
+        'dash_active': 'active'
     }
 
     return render_template('admin/dashboard.html', **context)
@@ -117,7 +118,7 @@ def dashboard():
 @login_required
 def latest_downloads():
     down_vids = db.session.query(Video).order_by(Video.dw_date.desc()).all()
-    return render_template('admin/latest_downloads.html', down_vids=down_vids)
+    return render_template('admin/latest_downloads.html', down_vids=down_vids, latest='active')
 
 @account.route('/faq', methods=['GET', 'POST'])
 @login_required
@@ -134,7 +135,7 @@ def faq():
 
     else:
         all_faq = Faq.query.all()
-        return render_template('admin/faq.html', all_faq=all_faq)
+        return render_template('admin/faq.html', all_faq=all_faq, faq_active='active')
 
 @account.route('/manage_admins', methods=['GET', 'POST'])
 @login_required

@@ -8,8 +8,8 @@ from ytdown import db
 public = Blueprint('public',__name__)
 
 def get_size(url):
-    #head = requests.head(url)
-    return 255 #convertFileSize(int(head.headers['Content-Length']))
+    head = requests.head(url)
+    return convertFileSize(int(head.headers['Content-Length']))
 
 def convertFileSize(num):
     if not num:
@@ -30,7 +30,7 @@ def youtube(meta):
     video_without_sound = []
     audio_streams = []
 
-    duration = str(timedelta(seconds=meta['duration']))
+    duration = str(timedelta(seconds=int(meta['duration'])))
     thumbnail = meta['thumbnail']
     title = meta['title']
 
@@ -98,7 +98,7 @@ def twitter(meta):
         if m['protocol'] == 'https':
             video_streams.append({
                 'resolution': str(m['height'])+'p',
-                'filesize': 255, #get_size(m['url']),
+                'filesize': get_size(m['url']),
                 'ext': m['ext'],
                 'token': token
             })
@@ -131,7 +131,7 @@ def izlesene(meta):
         token = str(uuid.uuid4())
         video_streams.append({
             'resolution': m['format_id'],
-            'filesize': 255, #get_size(m['url']),
+            'filesize': get_size(m['url']),
             'ext': m['ext'],
             'token': token
         })
@@ -165,7 +165,7 @@ def vimeo(meta):
         if m['protocol'] == 'https':
             video_streams.append({
                 'resolution': m['format_id'].split('-')[-1],
-                'filesize': 255, #get_size(m['url']),
+                'filesize': get_size(m['url']),
                 'ext': m['ext'],
                 'token': token
             })
@@ -239,7 +239,7 @@ def instagram(meta):
         if m['ext'] == 'mp4':
             video_streams.append({
                 'resolution': m['format'].split(' - ')[-1],
-                'filesize': 255, #get_size(m['url']),
+                'filesize': get_size(m['url']),
                 'ext': m['ext'],
                 'token': token
             })
@@ -273,7 +273,7 @@ def soundcloud(meta):
         if m['protocol'] == 'http':
             audio_streams.append({
                 'resolution': 'Audio',
-                'filesize': 255, #get_size(m['url']),
+                'filesize': get_size(m['url']),
                 'ext': m['ext'],
                 'token': token
             })
@@ -292,19 +292,25 @@ def soundcloud(meta):
 
 @public.route('/')
 def index():
-    return render_template('public/index.html')
+    downloader_list = ['youtube', 'twitter', 'instagram', 'vlive', 'vimeo', 'soundcloud', 'izlesene']
+    dw = request.args.get('downloader', type=str)
+    if not dw in downloader_list and dw:
+        abort(404), 404
+    return render_template('public/index.html', dw=dw)
 
 @public.route('/extractor', methods=['POST'])
 def extractor():
     if request.method == 'POST':
         url = request.form['inputValue']
-        ydl_opts = {}
+        ydl_opts = {
+            'geo_bypass': True,
+        }
         try:
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 meta = ydl.extract_info(url, download=False)
             #return jsonify(meta)
         except:
-            abort(404)
+            abort(404), 404
 
         # with open('C:/Users/Mehmet/Desktop/ytdown/vimeo.json') as f:
         #     meta = json.load(f)

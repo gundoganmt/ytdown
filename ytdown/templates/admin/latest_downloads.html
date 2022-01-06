@@ -37,7 +37,6 @@
                         <th>Thumbnail</th>
                         <th>Url</th>
                         <th>Download Date</th>
-                        <th>Start date</th>
                      </tr>
                   </thead>
                   <tbody>
@@ -47,10 +46,6 @@
                           <td class="ver-middle">
                               <a href="#" class="d-flex align-items-center">
                                 <img src="{{ vid.thumbnail }}" class="thumbnail rounded-circle-thumb me-3" alt="thumbnail">
-                                  <div class="d-block">
-                                      <span class="fw-bold">Michael Hopkins</span>
-                                      <div class="small text-gray">info@example.com</div>
-                                  </div>
                               </a>
                           </td>
                           <td class="ver-middle">
@@ -67,9 +62,6 @@
                                   {{ vid.dw_date }}
                               </span>
                           </td>
-                          <td class="ver-middle">
-                              <svg class="icon icon-xs text-danger ms-1" title="" data-bs-toggle="tooltip" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-bs-original-title="Delete" aria-label="Delete"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
-                          </td>
                       </tr>
                     {% endfor %}
                   </tbody>
@@ -78,9 +70,10 @@
          </div>
       </main>
       <!-- Core Libs -->
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/simple-datatables/dist/umd/simple-datatables.js"></script>
-      <script src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-
+      <script src="/static/admin/js/simple-datatables.min.js"></script>
+      <script src="/static/admin/js/bootstrap.min.js"></script>
+      <script src="/static/admin/js/sidebar.js"></script>
+      
       <script type="text/javascript">
       var dataTableEl = document.getElementById('datatable');
       if (dataTableEl) {
@@ -88,80 +81,5 @@
       }
       </script>
 
-      <script type="text/javascript">
-      const d = document;
-      const breakpoints = {
-          sm: 540,
-          md: 720,
-          lg: 960,
-          xl: 1140
-      };
-      var sidebar = document.getElementById('sidebarMenu');
-      var content = document.getElementsByClassName('content')[0];
-      if (sidebar && d.body.clientWidth < breakpoints.lg) {
-          sidebar.addEventListener('shown.bs.collapse', function() {
-              document.querySelector('body').style.position = 'fixed';
-          });
-          sidebar.addEventListener('hidden.bs.collapse', function() {
-              document.querySelector('body').style.position = 'relative';
-          });
-      }
-
-      if (sidebar) {
-          if (localStorage.getItem('sidebar') === 'contracted') {
-              sidebar.classList.add('notransition');
-              content.classList.add('notransition');
-
-              sidebar.classList.add('contracted');
-
-              setTimeout(function() {
-                  sidebar.classList.remove('notransition');
-                  content.classList.remove('notransition');
-              }, 500);
-
-          } else {
-              sidebar.classList.add('notransition');
-              content.classList.add('notransition');
-
-              sidebar.classList.remove('contracted');
-
-              setTimeout(function() {
-                  sidebar.classList.remove('notransition');
-                  content.classList.remove('notransition');
-              }, 500);
-          }
-
-          var sidebarToggle = d.getElementById('sidebar-toggle');
-          sidebarToggle.addEventListener('click', function() {
-              if (sidebar.classList.contains('contracted')) {
-                  sidebar.classList.remove('contracted');
-                  localStorage.removeItem('sidebar', 'contracted');
-              } else {
-                  sidebar.classList.add('contracted');
-                  localStorage.setItem('sidebar', 'contracted');
-              }
-          });
-
-          sidebar.addEventListener('mouseenter', function() {
-              if (localStorage.getItem('sidebar') === 'contracted') {
-                  if (sidebar.classList.contains('contracted')) {
-                      sidebar.classList.remove('contracted');
-                  } else {
-                      sidebar.classList.add('contracted');
-                  }
-              }
-          });
-
-          sidebar.addEventListener('mouseleave', function() {
-              if (localStorage.getItem('sidebar') === 'contracted') {
-                  if (sidebar.classList.contains('contracted')) {
-                      sidebar.classList.remove('contracted');
-                  } else {
-                      sidebar.classList.add('contracted');
-                  }
-              }
-          });
-      }
-      </script>
    </body>
 </html>

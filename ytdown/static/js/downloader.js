@@ -133,7 +133,7 @@ $(function () {
                         '<span class="d-block">' + vid_w_s[i].filesize + '</span>' +
                      '</td>' +
                      '<td class="align-middle">' +
-                        '<a class="btn mb-0" href="' + vid_w_s[i].token + '" title="Download">' +
+                        '<a class="btn mb-0" href="/download?token=' + vid_w_s[i].token + '" title="Download">' +
                         '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
                         '</a>' +
                      '</td>' +
@@ -159,7 +159,7 @@ $(function () {
                         '<span class="d-block">' + audio[i].filesize + '</span>' +
                      '</td>' +
                      '<td class="align-middle">' +
-                        '<a class="btn mb-0" href="' + audio[i].token + '" title="Download">' +
+                        '<a class="btn mb-0" href="/download?token=' + audio[i].token + '" title="Download">' +
                         '<span class="d-block"><i class="fas fa-download fa-fw"></i> Download</span>' +
                         '</a>' +
                      '</td>' +
@@ -178,6 +178,7 @@ $(function () {
             }
           }
           else {
+            $('.btn-form').prop("disabled",false);
             stopProgress();
             $('.progress-container').addClass('d-none');
             $('.alert').addClass('d-block');
