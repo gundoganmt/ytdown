@@ -12,6 +12,9 @@ account = Blueprint('account',__name__)
 
 UPLOAD_PROFILE_FOLDER = os.path.join(os.getcwd(), 'ytdown/static/images')
 
+def get_extension(filename):
+    return '.'+ filename.rsplit('.', 1)[1].lower()
+
 @login_manager.user_loader
 def load_user(id):
     return Admin.query.get(int(id))
@@ -109,7 +112,8 @@ def dashboard():
         "total_today": total_today,
         "rate_today": rate_today,
         "source_data": source_data,
-        'dash_active': 'active'
+        'dash_active': 'active',
+        'total_downloads': Video.query.count()
     }
 
     return render_template('admin/dashboard.html', **context)
@@ -137,12 +141,31 @@ def faq():
         all_faq = Faq.query.all()
         return render_template('admin/faq.html', all_faq=all_faq, faq_active='active')
 
+@account.route('/delete_faq/<int:faq_id>')
+@login_required
+def delete_faq(faq_id):
+    faq = Faq.query.get(faq_id)
+    if not faq:
+        abort(404), 404
+    db.session.delete(faq)
+    db.session.commit()
+    return redirect(url_for('.faq'))
+
+@account.route('/delete_all_videos')
+@login_required
+def delete_all_videos():
+    vids = Video.query.all()
+    for vid in vids:
+        db.session.delete(vid)
+    db.session.commit()
+    return redirect(url_for('.latest_downloads'))
+
 @account.route('/manage_admins', methods=['GET', 'POST'])
 @login_required
 def manageadmins():
     if request.method == 'GET':
         admins = Admin.query.all()
-        return render_template('admin/manage_admins.html', admins=admins)
+        return render_template('admin/manage_admins.html', admins=admins, manage_active='active')
     else:
         username = request.form['username']
         email = request.form['email']
@@ -170,10 +193,15 @@ def manageadmins():
         db.session.commit()
         return redirect(url_for('.manageadmins'))
 
-@account.route('/supported_sites', methods=['GET', 'POST'])
+@account.route('/delete_admin/<int:adm_id>')
 @login_required
-def supported_sites():
-    return render_template('admin/supported_sites.html')
+def delete_admin(adm_id):
+    adm = Admin.query.get(adm_id)
+    if not adm:
+        abort(404), 404
+    db.session.delete(adm)
+    db.session.commit()
+    return redirect(url_for('.manageadmins'))
 
 @account.route('/login', methods=['GET', 'POST'])
 def login():
@@ -200,6 +228,3 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('public.index'))
-
-def get_extension(filename):
-    return '.'+ filename.rsplit('.', 1)[1].lower()

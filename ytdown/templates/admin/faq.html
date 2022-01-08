@@ -2,13 +2,11 @@
 <html lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <!-- Primary Meta Tags -->
       <title>
-         Flask Volt Pro -  Data Tables  | AppSeed
+         Create FAQs
       </title>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link type="text/css" href="/static/admin/css/main.min.css" rel="stylesheet">
-      <!-- Specific Page CSS goes HERE  -->
    </head>
    <body>
       {% include 'admin/_sidebar.html' %}
@@ -58,13 +56,13 @@
                </div>
              </div>
              <div class="col-2">
-               <button type="button" class="btn btn-danger mt-1 me-1">Delete</button>
+               <a href="/delete_faq/{{faq.id}}" class="btn btn-danger mt-1 me-1">Delete</a>
              </div>
            </div>
          {% endfor %}
       </main>
       <script src="/static/admin/js/bootstrap.min.js"></script>
       <script src="/static/admin/js/sidebar.js"></script>
-      
+
    </body>
 </html>

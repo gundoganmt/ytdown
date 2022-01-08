@@ -19,6 +19,11 @@
               <div class="text-center text-md-center mb-4 mt-md-0">
                   <h1 class="mb-0 h3">Sign in to our platform</h1>
               </div>
+              {% for message in get_flashed_messages() %}
+                <div class="alert alert-danger" role="alert">
+                  {{message}}
+                </div>
+              {% endfor %}
               <form method="post" action="{{ url_for('account.login') }}" class="mt-4">
                   <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                   <div class="form-group mb-4">

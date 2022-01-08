@@ -2,66 +2,11 @@
 <html lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <!-- Primary Meta Tags -->
-      <title>
-         Flask Volt Pro -  Data Tables  | AppSeed
-      </title>
+      <title>Manage Admins</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link type="text/css" href="/static/admin/css/main.min.css" rel="stylesheet">
-      <!-- Specific Page CSS goes HERE  -->
-      <style media="screen">
-        .avatar-wrapper {
-	position: relative;
-	width: 150px;
-	height: 150px;
-	border-radius: 4px;
-	overflow: hidden;
-	box-shadow: none;
-	margin: 0 10px 0;
-	transition: all .3s ease;
-}
-.avatar-wrapper:hover {
-	transform: scale(1.05);
-	cursor: pointer;
-}
+      <link type="text/css" href="/static/admin/css/profile.css" rel="stylesheet">
 
-.avatar-wrapper .profile-pic {
-	height: 100%;
-	width: 100%;
-	transition: all .3s ease;
-	object-fit: cover;
-}
-
-.avatar-wrapper .profile-pic:after {
-	font-family: Feather-Icons;
-	content: "\e9f1";
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	line-height: 120px;
-	position: absolute;
-	font-size: 60px;
-	background: #f0f0f0;
-	color: #aaa;
-	text-align: center;
-}
-
-.avatar-wrapper .upload-button {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
-.avatar-wrapper .file-upload {
-	opacity: 0;
-	pointer-events: none;
-	position: absolute;
-}
-
-      </style>
    </head>
    <body>
       {% include 'admin/_sidebar.html' %}
@@ -101,7 +46,7 @@
                                 <td class="border-0 fw-bold">{{adm.email}}</td>
                                 <td class="border-0">
                                   <span>
-                                    <a>
+                                    <a href="/delete_admin/{{adm.id}}">
                                       <img src="{{ url_for('static', filename='images/trash.svg')}}" alt="delete" width="15" height="15">
                                     </a>
                                   </span>
@@ -117,7 +62,7 @@
            <div class="alert alert-danger" role="alert">
              {{message}}
            </div>
-        {% endfor %}
+         {% endfor %}
 
          <div class="col-12 col-xl-12 mt-4">
            <div class="card card-body border-0 shadow mb-4">
@@ -157,26 +102,10 @@
            </div>
          </div>
       </main>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script>
+      <script src="/static/admin/js/jquery.min.js"></script>
+      <script src="/static/admin/js/manageadmins.js"></script>
+      <script src="/static/admin/js/bootstrap.min.js"></script>
+      <script src="/static/admin/js/sidebar.js"></script>
 
-   var readURL = function(input) {
-     if (input.files && input.files[0]) {
-         var reader = new FileReader();
-         reader.onload = function (e) {
-             $('.profile-pic').attr('src', e.target.result);
-         }
-         reader.readAsDataURL(input.files[0]);
-     }
-   }
-
-   $(".file-upload").on('change', function(){
-       readURL(this);
-   });
-
-   $(".upload-button").on('click', function() {
-      $(".file-upload").click();
-   });
- </script>
    </body>
 </html>

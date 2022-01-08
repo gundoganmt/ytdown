@@ -69,7 +69,7 @@ var options = {
         strokeDashArray: 1,
     },
     series: [{
-        name: "Sales",
+        name: "Downloads",
         data: data
     }],
     markers: {
@@ -123,7 +123,7 @@ if (document.getElementById('chart')) {
 // Total Orders Chart
 var optionsAppRankingChart = {
     series: [{
-        name: 'Travel & Local',
+        name: 'Downloads',
         data: source_data
     }],
     chart: {

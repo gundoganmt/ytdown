@@ -1,6 +1,6 @@
 from flask import render_template, Blueprint, request, jsonify, Response, abort, url_for
 from flask_login import current_user
-import youtube_dl, requests, timeit, json, uuid, os
+import youtube_dl, requests, json, uuid, os
 from ytdown.models import Video, Resolutions
 from datetime import datetime, timedelta
 from ytdown import db
@@ -34,7 +34,7 @@ def youtube(meta):
     thumbnail = meta['thumbnail']
     title = meta['title']
 
-    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
+    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail, title=title,
         dw_date=datetime.today().strftime('%Y-%m-%d'), source='Youtube')
     db.session.add(video)
     db.session.commit()
@@ -48,7 +48,7 @@ def youtube(meta):
                 'ext': m['ext'],
                 'token': token
             })
-            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            resolution = Resolutions(download_url=m['url'], ext=m['ext'], token=token, vid_id=video.id)
             db.session.add(resolution)
         elif m['acodec'] == 'none' and m['vcodec'] != 'none':
             video_without_sound.append({
@@ -57,7 +57,7 @@ def youtube(meta):
                 'ext': m['ext'],
                 'token': token
             })
-            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            resolution = Resolutions(download_url=m['url'], ext=m['ext'], token=token, vid_id=video.id)
             db.session.add(resolution)
         elif m['acodec'] != 'none' and m['vcodec'] == 'none':
             audio_streams.append({
@@ -66,7 +66,7 @@ def youtube(meta):
                 'ext': m['ext'],
                 'token': token
             })
-            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            resolution = Resolutions(download_url=m['url'], ext=m['ext'], token=token, vid_id=video.id)
             db.session.add(resolution)
 
     db.session.commit()
@@ -84,11 +84,11 @@ def youtube(meta):
 def twitter(meta):
     video_streams = []
 
-    duration = str(timedelta(seconds=meta['duration']))
+    duration = str(timedelta(seconds=int(meta['duration'])))
     thumbnail = meta['thumbnail']
     title = meta['title']
 
-    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
+    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail, title=title,
         dw_date=datetime.today().strftime('%Y-%m-%d'), source='Twitter')
     db.session.add(video)
     db.session.commit()
@@ -102,7 +102,7 @@ def twitter(meta):
                 'ext': m['ext'],
                 'token': token
             })
-            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            resolution = Resolutions(download_url=m['url'], ext=m['ext'], token=token, vid_id=video.id)
             db.session.add(resolution)
 
     db.session.commit()
@@ -118,11 +118,11 @@ def twitter(meta):
 def izlesene(meta):
     video_streams = []
 
-    duration = str(timedelta(seconds=meta['duration']))
+    duration = str(timedelta(seconds=int(meta['duration'])))
     thumbnail = meta['thumbnail']
     title = meta['title']
 
-    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
+    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail, title=title,
         dw_date=datetime.today().strftime('%Y-%m-%d'), source='Izlesene')
     db.session.add(video)
     db.session.commit()
@@ -135,7 +135,7 @@ def izlesene(meta):
             'ext': m['ext'],
             'token': token
         })
-        resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+        resolution = Resolutions(download_url=m['url'], ext=m['ext'], token=token, vid_id=video.id)
         db.session.add(resolution)
 
     db.session.commit()
@@ -151,11 +151,11 @@ def izlesene(meta):
 def vimeo(meta):
     video_streams = []
 
-    duration = str(timedelta(seconds=meta['duration']))
+    duration = str(timedelta(seconds=int(meta['duration'])))
     thumbnail = meta['thumbnail']
     title = meta['title']
 
-    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
+    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail, title=title,
         dw_date=datetime.today().strftime('%Y-%m-%d'), source='Vimeo')
     db.session.add(video)
     db.session.commit()
@@ -169,7 +169,7 @@ def vimeo(meta):
                 'ext': m['ext'],
                 'token': token
             })
-            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            resolution = Resolutions(download_url=m['url'], ext=m['ext'], token=token, vid_id=video.id)
             db.session.add(resolution)
 
     db.session.commit()
@@ -185,11 +185,11 @@ def vimeo(meta):
 def vlive(meta):
     video_streams = []
 
-    duration = str(timedelta(seconds=meta['duration']))
+    duration = str(timedelta(seconds=int(meta['duration'])))
     thumbnail = meta['thumbnail']
     title = meta['title']
 
-    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
+    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail, title=title,
         dw_date=datetime.today().strftime('%Y-%m-%d'), source='Vlive')
     db.session.add(video)
     db.session.commit()
@@ -203,7 +203,7 @@ def vlive(meta):
                 'ext': m['ext'],
                 'token': token
             })
-            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            resolution = Resolutions(download_url=m['url'], ext=m['ext'], token=token, vid_id=video.id)
             db.session.add(resolution)
 
     db.session.commit()
@@ -225,11 +225,11 @@ def instagram(meta):
         handler.write(img_data)
 
     video_streams = []
-    duration = str(timedelta(seconds=meta['duration']))
+    duration = str(timedelta(seconds=int(meta['duration'])))
     thumbnail = url_for('static', filename='images/'+unique_filename)
     title = meta['title']
 
-    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
+    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail, title=title,
         dw_date=datetime.today().strftime('%Y-%m-%d'), source='Instagram')
     db.session.add(video)
     db.session.commit()
@@ -243,7 +243,7 @@ def instagram(meta):
                 'ext': m['ext'],
                 'token': token
             })
-            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            resolution = Resolutions(download_url=m['url'], ext=m['ext'], token=token, vid_id=video.id)
             db.session.add(resolution)
 
     db.session.commit()
@@ -259,11 +259,11 @@ def instagram(meta):
 def soundcloud(meta):
     audio_streams = []
 
-    duration = str(timedelta(seconds=meta['duration']))
+    duration = str(timedelta(seconds=int(meta['duration'])))
     thumbnail = meta['thumbnail']
     title = meta['title']
 
-    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail,
+    video = Video(web_url=meta['webpage_url'], thumbnail=thumbnail, title=title,
         dw_date=datetime.today().strftime('%Y-%m-%d'), source='SoundCloud')
     db.session.add(video)
     db.session.commit()
@@ -277,7 +277,7 @@ def soundcloud(meta):
                 'ext': m['ext'],
                 'token': token
             })
-            resolution = Resolutions(download_url=m['url'], token=token, vid_id=video.id)
+            resolution = Resolutions(download_url=m['url'], ext=m['ext'], token=token, vid_id=video.id)
             db.session.add(resolution)
 
     db.session.commit()
@@ -308,7 +308,7 @@ def extractor():
         try:
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 meta = ydl.extract_info(url, download=False)
-            #return jsonify(meta)
+            return jsonify(meta)
         except:
             abort(404), 404
 
@@ -335,9 +335,11 @@ def download():
     token = request.args.get('token', type=str)
     res = Resolutions.query.filter_by(token=token).first_or_404()
 
+    filename = str(res.res.title) + "." + str(res.ext)
+
     r = requests.get(res.download_url, stream=True)
     headers = {
-        'Content-Disposition': 'attachment; ' 'filename=trial.mp4',
+        'Content-Disposition': 'attachment; ' 'filename='+filename,
         'Content-Length': r.headers['Content-Length']
     }
     return Response(r, headers=headers)
