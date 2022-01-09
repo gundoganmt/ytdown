@@ -23,6 +23,11 @@
                 <a href="/delete_all_videos" class="btn btn-primary mt-1 me-1">Delete All</a>
             </div>
          </div>
+         {% for message in get_flashed_messages() %}
+           <div class="alert alert-danger" role="alert">
+             {{message}}
+           </div>
+         {% endfor %}
          <div class="card">
             <div class="table-responsive py-4">
                <table class="table table-flush" id="datatable">

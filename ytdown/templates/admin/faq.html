@@ -38,6 +38,11 @@
               </form>
            </div>
          </div>
+         {% for message in get_flashed_messages() %}
+           <div class="alert alert-danger" role="alert">
+             {{message}}
+           </div>
+         {% endfor %}
          {% for faq in all_faq %}
            <div class="row mb-4">
              <div class="col-10">

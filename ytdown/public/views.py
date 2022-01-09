@@ -1,7 +1,7 @@
 from flask import render_template, Blueprint, request, jsonify, Response, abort, url_for
 from flask_login import current_user
 import youtube_dl, requests, json, uuid, os
-from ytdown.models import Video, Resolutions
+from ytdown.models import Video, Resolutions, Faq
 from datetime import datetime, timedelta
 from ytdown import db
 
@@ -296,7 +296,8 @@ def index():
     dw = request.args.get('downloader', type=str)
     if not dw in downloader_list and dw:
         abort(404), 404
-    return render_template('public/index.html', dw=dw)
+    all_faq = Faq.query.all()
+    return render_template('public/index.html', dw=dw, all_faq=all_faq)
 
 @public.route('/extractor', methods=['POST'])
 def extractor():

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
    <a class="navbar-brand me-lg-5" href="/">
-   <img class="navbar-brand-dark" src="{{url_for('static', filename='images/download-arrow.svg')}}"/> 
+   <img class="navbar-brand-dark" src="{{url_for('static', filename='images/download-arrow.svg')}}"/>
    </a>
    <div class="d-flex align-items-center">
       <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,10 +13,10 @@
       <div class="user-card d-flex d-md-none justify-content-between justify-content-md-center pb-4">
          <div class="d-flex align-items-center">
             <div class="avatar-lg me-4">
-               <img src="https://appsrv1-147a1.kxcdn.com/volt-dashboard-pro-v141/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+               <img src="{{ url_for('static', filename='images/'+current_user.profile_picture) }}" class="card-img-top rounded-circle border-white">
             </div>
             <div class="d-block">
-               <h2 class="h5 mb-3">Hi, Jane</h2>
+               <h2 class="h5 mb-3">Hi, {{ current_user }}</h2>
                <a href="/logout" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
                   <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
