@@ -309,12 +309,8 @@ def extractor():
         try:
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 meta = ydl.extract_info(url, download=False)
-            return jsonify(meta)
         except:
             abort(404), 404
-
-        # with open('C:/Users/Mehmet/Desktop/ytdown/vimeo.json') as f:
-        #     meta = json.load(f)
 
         if meta['extractor'] == 'youtube':
             return youtube(meta)
