@@ -1,6 +1,5 @@
 from ytdown import create_app, db
 from ytdown.models import Video, Resolutions, Admin
-from flask_admin.contrib.sqla import ModelView
 from werkzeug.security import generate_password_hash
 
 app = create_app()

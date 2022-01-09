@@ -9,7 +9,10 @@ public = Blueprint('public',__name__)
 
 def get_size(url):
     head = requests.head(url)
-    return convertFileSize(int(head.headers['Content-Length']))
+    if 'Content-Length' in head.headers:
+        return convertFileSize(int(head.headers['Content-Length']))
+    else:
+        return 'unknown'
 
 def convertFileSize(num):
     if not num:
@@ -304,7 +307,9 @@ def extractor():
     if request.method == 'POST':
         url = request.form['inputValue']
         ydl_opts = {
+            'quiet': True,
             'geo_bypass': True,
+            'skip_download': True
         }
         try:
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
@@ -335,8 +340,13 @@ def download():
     filename = str(res.res.title) + "." + str(res.ext)
 
     r = requests.get(res.download_url, stream=True)
-    headers = {
-        'Content-Disposition': 'attachment; ' 'filename='+filename,
-        'Content-Length': r.headers['Content-Length']
-    }
+    if 'Content-Length' in r.headers:
+        headers = {
+            'Content-Disposition': 'attachment; ' 'filename='+filename,
+            'Content-Length': int(r.headers['Content-Length'])
+        }
+    else:
+        headers = {
+            'Content-Disposition': 'attachment; ' 'filename='+filename,
+        }
     return Response(r, headers=headers)

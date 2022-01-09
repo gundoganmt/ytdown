@@ -90,7 +90,6 @@ def dashboard():
     priority_source = ['Youtube', 'Twitter', 'Instagram', 'Vlive', 'Vimeo', 'SoundCloud', 'Izlesene']
     i = 0
     j = 0
-    print("b->", b)
     source_data = []
     while i <= 6:
         while j < len(b):
@@ -98,7 +97,7 @@ def dashboard():
                 source_data.append(b[j][1])
                 break
             j += 1
-        if j == 7:
+        if j == len(b):
             source_data.append(0)
         i += 1
         j = 0
