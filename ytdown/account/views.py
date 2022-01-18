@@ -144,8 +144,6 @@ def faq():
 @account.route('/delete_faq/<int:faq_id>')
 @login_required
 def delete_faq(faq_id):
-    flash('This feature is disabled for demo mode')
-    return redirect(url_for('.faq'))
     faq = Faq.query.get(faq_id)
     if not faq:
         abort(404), 404
@@ -156,8 +154,6 @@ def delete_faq(faq_id):
 @account.route('/delete_all_videos')
 @login_required
 def delete_all_videos():
-    flash('This feature is disabled for demo mode')
-    return redirect(url_for('.latest_downloads'))
     vids = Video.query.all()
     for vid in vids:
         db.session.delete(vid)
@@ -203,9 +199,7 @@ def delete_admin(adm_id):
     adm = Admin.query.get(adm_id)
     if not adm:
         abort(404), 404
-    if adm.username == 'admin':
-        flash('Cannot delete primary admin')
-        return redirect(url_for('.manageadmins'))
+
     db.session.delete(adm)
     db.session.commit()
     return redirect(url_for('.manageadmins'))
