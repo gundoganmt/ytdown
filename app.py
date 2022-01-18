@@ -8,8 +8,8 @@ app = create_app()
 def populateDb():
     admin = db.session.query(Admin).first()
     if not admin:
-        admin = Admin(username='admin', email="admin@gmail.com", full_name="John Doe",
-            password=generate_password_hash("123456", method='sha256', salt_length=7))
+        admin = Admin(username='johndoe', email="admin@gmail.com", full_name="John Doe",
+            password=generate_password_hash("qazxswedc", method='sha256', salt_length=7))
         db.session.add(admin)
         db.session.commit()
     return True
