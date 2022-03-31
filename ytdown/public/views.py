@@ -310,7 +310,8 @@ def extractor():
             'quiet': True,
             'geo_bypass': True,
             'skip_download': True,
-            'cookies': 'cookies.txt'
+            'cookies': 'cookies.txt',
+            'verbose': True
         }
         try:
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
